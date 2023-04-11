@@ -48,7 +48,7 @@ export const PROJECTS: IProject[] = [
     created: new Date("2021-09-01"),
     modified: new Date("2022-11-01"),
     gitLink: "https://github.com/AaronTheNerd/DiscordBot",
-    thumbnails: ["assets/thumbnails/discord.jpeg"]
+    thumbnails: ["assets/thumbnails/discord.webp"]
   },
   {
     id: 2,
