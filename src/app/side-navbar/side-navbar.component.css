@@ -1,0 +1,25 @@
+.navbar-main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 4.5rem;
+  z-index: 8;
+}
+
+.nav-flush .nav-link {
+  border-radius: 0;
+  display: inline-block;
+}
+
+.navbar-main mat-icon {
+  color: var(--bs-light);
+}
+
+.navbar-main a:hover mat-icon {
+  color: #b7b7b7;
+}
+
+.navbar-main a.active {
+  background-color: var(--bs-primary);
+}

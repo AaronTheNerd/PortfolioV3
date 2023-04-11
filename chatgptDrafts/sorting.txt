@@ -1,0 +1,9 @@
+Here's a summary of the sorting algorithm visualizer you wrote in C++ in the style of a wiki page. This program keeps track of which sort is running, how many swaps and lookups have occurred, and displays the current state of the list using a GTK window:
+
+The Sorting Algorithm Visualizer developed by [Your Name] is a C++ program designed to provide a visual representation of various sorting algorithms. The program utilizes the GTK windowing toolkit to display the current state of the list being sorted, as well as information on which sort is currently running and how many swaps and lookups have occurred.
+
+The program includes several sorting algorithms, including bubble sort, selection sort, insertion sort, merge sort, quick sort, and heap sort. Users can select which sort to run and the program will display the current state of the list in the GTK window as the sort progresses. The visual representation of the list makes it easy to see how the sort algorithm is working and can help users gain a better understanding of how the different algorithms function.
+
+In addition to the visual representation, the program also keeps track of the number of swaps and lookups that occur during the sorting process. This information is displayed in the GTK window and can help users compare the efficiency of the different sorting algorithms.
+
+Overall, the Sorting Algorithm Visualizer developed by [Your Name] demonstrates proficiency in programming with C++, using the GTK windowing toolkit, and developing a useful tool for visualizing and comparing sorting algorithms.

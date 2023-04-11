@@ -1,0 +1,21 @@
+.projects-content {
+  padding: 0 10vw;
+}
+
+.filter-ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.project-row:hover {
+  background-color: var(--bs-gray-300);
+  cursor: pointer;
+}
+
+.project-row:hover:nth-of-type(1) {
+  border-radius: var(--bs-border-radius) var(--bs-border-radius) 0 0;
+}
+
+.project-row:hover:last-of-type {
+  border-radius: 0 0 var(--bs-border-radius) var(--bs-border-radius);
+}

@@ -1,0 +1,10 @@
+Here's a formal, brief summary of the Discord bot you wrote in Python in the style of a wiki page that uses discord.py and youtubeDL to play music for your friend's server, and also includes features for assisting in virtual D&D sessions by rolling dice:
+
+The Discord bot developed by [Your Name] is a multi-functional application that can be used to play music and assist in virtual D&D sessions. Written in Python programming language and utilizing the discord.py library, the bot is designed to operate within a Discord server and provide customized functionality to the users.
+
+One of the primary features of the bot is its ability to play music in a voice channel. By using the youtubeDL library, the bot can search and download music from YouTube and play it back for the users. The bot also includes commands to skip, pause, and resume music playback, making it easy to control the audio experience within the server.
+
+In addition to music playback, the bot also includes features for assisting in virtual D&D sessions. The bot can roll various types of dice with customizable modifiers and provide the results in the chat. This functionality can be used to simulate actions and combat in D&D sessions and can enhance the overall experience for the players.
+
+Overall, the Discord bot developed by [Your Name] demonstrates proficiency in integrating APIs, programming with Python, and developing a customized bot for multiple use cases.
+

@@ -1,0 +1,19 @@
+<div class="row project-content">
+  <div class="col-auto">
+    <app-table-of-contents [sections]="project.sections"></app-table-of-contents>
+  </div>
+  <div class="col">
+    <p id="top" class="display-5 mb-0">{{project.title}}</p>
+    <div *ngFor="let section of project.sections" [id]="section.id == 'top' ? '' : section.id">
+      <div *ngIf="section.title as title" [innerHTML]="title" class="display-6 pt-2"></div>
+      <hr class="hr mt-0" />
+      <div [innerHTML]="section.content"></div>
+      <div *ngIf="section.subsections as subsections">
+        <div *ngFor="let subsection of subsections" class="pt-2" [id]="subsection.id">
+          <p *ngIf="subsection.title as title" [innerHTML]="title" class="h4"></p>
+          <div [innerHTML]="subsection.content"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

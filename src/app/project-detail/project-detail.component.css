@@ -1,0 +1,10 @@
+.project-content {
+  position: relative;
+  z-index: 0;
+  max-width: 89.75em;
+  min-width: 31.25em;
+  min-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em 1em;
+}

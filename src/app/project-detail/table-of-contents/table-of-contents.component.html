@@ -1,0 +1,12 @@
+<ul class="ps-0">
+  <li *ngFor="let section of sections">
+    <button (click)="scroller.scrollToAnchor(section.id)" class="btn text-primary pr-auto">{{section.title ? section.title : "(Top)"}}</button>
+    <div *ngIf="section.subsections as subsections">
+      <ul>
+        <li *ngFor="let subsection of subsections">
+          <button (click)="scroller.scrollToAnchor(subsection.id)" class="btn text-primary">{{subsection.title}}</button>
+        </li>
+      </ul>
+    </div>
+  </li>
+</ul>
