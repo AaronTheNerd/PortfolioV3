@@ -1,4 +1,4 @@
 <app-side-navbar></app-side-navbar>
-<div id="app-content" class="bg-dark text-white" style="padding-left: 4.5rem;">
-  <router-outlet></router-outlet>
+<div [@routeAnimations]="getRouteAnimationData()" id="app-content" class="bg-dark text-white" style="padding-left: 4.5rem;">
+  <router-outlet style="left: 4.5rem;"></router-outlet>
 </div>

@@ -9,14 +9,46 @@ import { ProjectDetailComponent } from './project-detail/project-detail.componen
 import { WorkComponent } from './work/work.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: 'home', component: HomeComponent },
-  { path: 'about', component: AboutComponent },
-  { path: 'projects', component: ProjectsComponent },
-  { path: 'projects/:id', component: ProjectDetailComponent },
-  { path: 'work', component: WorkComponent },
-  { path: 'bug', component: BugComponent },
-  { path: 'contact', component: ContactComponent },
+  {
+    path: '',
+    redirectTo: '/home',
+    pathMatch: 'full'
+  },
+  {
+    path: 'home', 
+    component: HomeComponent,
+    data: { animation: "home" }
+  },
+  {
+    path: 'about', 
+    component: AboutComponent,
+    data: { animation: "about" }
+  },
+  {
+    path: 'projects', 
+    component: ProjectsComponent,
+    data: { animation: "list" }
+  },
+  {
+    path: 'projects/:id', 
+    component: ProjectDetailComponent,
+    data: { animation: "project" }
+  },
+  {
+    path: 'work', 
+    component: WorkComponent,
+    data: { animation: "work" }
+  },
+  {
+    path: 'bug', 
+    component: BugComponent,
+    data: { animation: "bug" }
+  },
+  {
+    path: 'contact', 
+    component: ContactComponent,
+    data: { animation: "contact" }
+  },
 ];
 
 @NgModule({
