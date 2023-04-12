@@ -76,20 +76,22 @@
         </h1>
         <div class="pb-3" *ngIf="proj.sections.length"  [innerHTML]="proj.sections[0].content | truncate : 200"></div>
         <div *ngIf="proj.tags.length" class="row pb-2">
-          <div class="col-3">
-            <b>Tools Used:</b>
+          <div class="col-auto">
+            <div>
+              <b>Creation Date:</b>
+            </div>
+            <div>
+              <b>Tools Used:</b>
+            </div>
           </div>
           <div class="col">
-            <span *ngFor="let tag of proj.tags; let index = index">
-              {{tag}}{{(index + 1 != proj.tags.length) ? ',' : ''}}&nbsp;
-            </span>
+            <div class="col" [innerHTML]="fDate(proj.created)"></div>
+            <div>
+              <span *ngFor="let tag of proj.tags; let index = index">
+                {{tag}}{{(index + 1 != proj.tags.length) ? ',' : ''}}&nbsp;
+              </span>
+            </div>
           </div>
-        </div>
-        <div class="row pb-3">
-          <div class="col-3">
-            <b>Creation Date:</b>
-          </div>
-          <div class="col" [innerHTML]="fDate(proj.created)"></div>
         </div>
         <div>
           <a *ngIf="proj.gitLink" [href]="proj.gitLink" class="mx-1" style="color: #000; z-index: 100; vertical-align: middle;" role="button">
