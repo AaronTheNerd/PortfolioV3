@@ -10,7 +10,7 @@ const slideDown = [
     })
   ]),
   query(":enter", [
-    style({ top: "100vh" })
+    style({ top: "100vh", opacity: 0 })
   ]),
   query(":leave", [
     style({ top: "0vh" })
@@ -20,7 +20,7 @@ const slideDown = [
       animate("300ms ease-out", style({ top: "-100vh", opacity: 0 }))
     ]),
     query(":enter", [
-      animate("300ms ease-out", style({ top: "0vh" }))
+      animate("300ms ease-out", style({ top: "0vh", opacity: 1 }))
     ])
   ])
 ];
@@ -35,7 +35,7 @@ const slideUp = [
     })
   ]),
   query(":enter", [
-    style({ top: "-100vh" })
+    style({ top: "-100vh", opacity: 0 })
   ]),
   query(":leave", [
     style({ top: "0vh" })
@@ -45,7 +45,7 @@ const slideUp = [
       animate("300ms ease-out", style({ top: "100vh", opacity: 0 }))
     ]),
     query(":enter", [
-      animate("300ms ease-out", style({ top: "0vh" }))
+      animate("300ms ease-out", style({ top: "0vh", opacity: 1 }))
     ])
   ])
 ];
@@ -103,35 +103,17 @@ const slideLeft = [
 export const routeAnimations = trigger("routeAnimations", [
   transition("list => project", slideRight),
   transition("project => list", slideLeft),
-  transition("home => about", slideDown),
-  transition("home => list", slideDown),
-  transition("home => work", slideDown),
-  transition("home => bug", slideDown),
-  transition("home => contact", slideDown),
+  transition("home => *", slideDown),
   transition("about => home", slideUp),
-  transition("about => list", slideDown),
-  transition("about => work", slideDown),
-  transition("about => bug", slideDown),
-  transition("about => contact", slideDown),
+  transition("about => *", slideDown),
   transition("list => home", slideUp),
   transition("list => about", slideUp),
-  transition("list => work", slideDown),
-  transition("list => bug", slideDown),
-  transition("list => contact", slideDown),
-  transition("work => home", slideUp),
-  transition("work => about", slideUp),
-  transition("work => list", slideUp),
+  transition("list => *", slideDown),
   transition("work => bug", slideDown),
   transition("work => contact", slideDown),
-  transition("bug => home", slideUp),
-  transition("bug => about", slideUp),
-  transition("bug => list", slideUp),
-  transition("bug => work", slideUp),
+  transition("work => *", slideUp),
   transition("bug => contact", slideDown),
-  transition("contact => home", slideUp),
-  transition("contact => about", slideUp),
-  transition("contact => list", slideUp),
-  transition("contact => work", slideUp),
-  transition("contact => bug", slideUp),
+  transition("bug => *", slideUp),
+  transition("contact => *", slideUp),
   transition("* <=> *", slideUp)
-])
+]);
