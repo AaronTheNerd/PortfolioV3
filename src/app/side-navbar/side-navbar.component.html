@@ -1,11 +1,16 @@
-<div class="navbar-main d-flex flex-column flex-shrink-0 text-white bg-dark2" style="width: 4.5rem;">
-  <ul class="nav nav-pills nav-flush flex-column mt-auto mb-auto text-center">
+<div class="navbar-main d-flex flex-column flex-shrink-0 text-white bg-dark2">
+  <ul class="nav nav-pills nav-flush flex-column my-auto">
     <li *ngFor="let route of routes">
-      <a routerLink="{{route.path}}" class="nav-link py-3" routerLinkActive="active"
-        [routerLinkActiveOptions]="{ exact: true }" title="{{route.label}}">
-        <mat-icon width="40" height="32" aria-hidden="false">{{route.icon}}</mat-icon>
+      <a
+        routerLink="{{ route.path }}"
+        class="nav-link d-flex"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        title="{{ route.label }}">
+        <mat-icon width="40" height="32" class="m-auto" aria-hidden="false">{{
+          route.icon
+        }}</mat-icon>
       </a>
     </li>
   </ul>
-  <div class="ms-4"></div>
 </div>
