@@ -7,7 +7,7 @@
   z-index: 8;
 }
 
-.nav-flush .nav-link {
+.navbar-main .nav-link {
   border-radius: 0;
   display: inline-block;
   width: 100%;
