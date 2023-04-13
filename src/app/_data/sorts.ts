@@ -3,5 +3,5 @@ export enum Sorts {
   title_z_a = "Title: Z-A",
   lang_a_z = "Language: A-Z",
   lang_z_a = "Language: Z-A",
-  newest = "Newest Projects"
+  newest = "Newest Projects",
 }

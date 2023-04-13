@@ -4,7 +4,7 @@
   </div>
   <div class="col">
     <p id="top" class="display-5 mb-0">{{project.title}}</p>
-    <div *ngFor="let section of project.sections" [id]="section.id == 'top' ? '' : section.id">
+    <div *ngFor="let section of project.sections" [id]="section.id === 'top' ? '' : section.id">
       <div *ngIf="section.title as title" [innerHTML]="title" class="display-6 pt-2"></div>
       <hr class="hr mt-0" />
       <div [innerHTML]="section.content"></div>

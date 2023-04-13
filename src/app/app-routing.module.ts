@@ -1,58 +1,58 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { AboutComponent } from './about/about.component';
-import { BugComponent } from './bug/bug.component';
-import { ContactComponent } from './contact/contact.component';
-import { HomeComponent } from './home/home.component';
-import { ProjectsComponent } from './projects/projects.component';
-import { ProjectDetailComponent } from './project-detail/project-detail.component';
-import { WorkComponent } from './work/work.component';
+import { NgModule } from "@angular/core";
+import { RouterModule, Routes } from "@angular/router";
+import { AboutComponent } from "./about/about.component";
+import { BugComponent } from "./bug/bug.component";
+import { ContactComponent } from "./contact/contact.component";
+import { HomeComponent } from "./home/home.component";
+import { ProjectsComponent } from "./projects/projects.component";
+import { ProjectDetailComponent } from "./project-detail/project-detail.component";
+import { WorkComponent } from "./work/work.component";
 
 const routes: Routes = [
   {
-    path: '',
-    redirectTo: '/home',
-    pathMatch: 'full'
+    path: "",
+    redirectTo: "/home",
+    pathMatch: "full",
   },
   {
-    path: 'home', 
+    path: "home",
     component: HomeComponent,
-    data: { animation: "home" }
+    data: { animation: "home" },
   },
   {
-    path: 'about', 
+    path: "about",
     component: AboutComponent,
-    data: { animation: "about" }
+    data: { animation: "about" },
   },
   {
-    path: 'projects', 
+    path: "projects",
     component: ProjectsComponent,
-    data: { animation: "list" }
+    data: { animation: "list" },
   },
   {
-    path: 'projects/:id', 
+    path: "projects/:id",
     component: ProjectDetailComponent,
-    data: { animation: "project" }
+    data: { animation: "project" },
   },
   {
-    path: 'work', 
+    path: "work",
     component: WorkComponent,
-    data: { animation: "work" }
+    data: { animation: "work" },
   },
   {
-    path: 'bug', 
+    path: "bug",
     component: BugComponent,
-    data: { animation: "bug" }
+    data: { animation: "bug" },
   },
   {
-    path: 'contact', 
+    path: "contact",
     component: ContactComponent,
-    data: { animation: "contact" }
+    data: { animation: "contact" },
   },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

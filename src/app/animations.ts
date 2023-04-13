@@ -1,4 +1,11 @@
-import { animate, animateChild, group, query, style, transition, trigger } from "@angular/animations";
+import {
+  animate,
+  group,
+  query,
+  style,
+  transition,
+  trigger,
+} from "@angular/animations";
 
 const slideDown = [
   style({ position: "relative" }),
@@ -6,23 +13,19 @@ const slideDown = [
     style({
       position: "absolute",
       left: "4.5rem",
-      width: "calc(100% - 4.5rem)"
-    })
+      width: "calc(100% - 4.5rem)",
+    }),
   ]),
-  query(":enter", [
-    style({ top: "100vh", opacity: 0 })
-  ]),
-  query(":leave", [
-    style({ top: "0vh" })
-  ]),
+  query(":enter", [style({ top: "100vh", opacity: 0 })]),
+  query(":leave", [style({ top: "0vh" })]),
   group([
     query(":leave", [
-      animate("300ms ease-out", style({ top: "-100vh", opacity: 0 }))
+      animate("300ms ease-out", style({ top: "-100vh", opacity: 0 })),
     ]),
     query(":enter", [
-      animate("300ms ease-out", style({ top: "0vh", opacity: 1 }))
-    ])
-  ])
+      animate("300ms ease-out", style({ top: "0vh", opacity: 1 })),
+    ]),
+  ]),
 ];
 
 const slideUp = [
@@ -31,23 +34,19 @@ const slideUp = [
     style({
       position: "absolute",
       left: "4.5rem",
-      width: "calc(100% - 4.5rem)"
-    })
+      width: "calc(100% - 4.5rem)",
+    }),
   ]),
-  query(":enter", [
-    style({ top: "-100vh", opacity: 0 })
-  ]),
-  query(":leave", [
-    style({ top: "0vh" })
-  ]),
+  query(":enter", [style({ top: "-100vh", opacity: 0 })]),
+  query(":leave", [style({ top: "0vh" })]),
   group([
     query(":leave", [
-      animate("300ms ease-out", style({ top: "100vh", opacity: 0 }))
+      animate("300ms ease-out", style({ top: "100vh", opacity: 0 })),
     ]),
     query(":enter", [
-      animate("300ms ease-out", style({ top: "0vh", opacity: 1 }))
-    ])
-  ])
+      animate("300ms ease-out", style({ top: "0vh", opacity: 1 })),
+    ]),
+  ]),
 ];
 
 const slideRight = [
@@ -56,23 +55,15 @@ const slideRight = [
     style({
       position: "absolute",
       top: 0,
-      width: "calc(100% - 4.5rem)"
-    })
+      width: "calc(100% - 4.5rem)",
+    }),
   ]),
-  query(":enter", [
-    style({ left: "100vw" })
-  ]),
-  query(":leave", [
-    style({ left: "4.5rem" })
-  ]),
+  query(":enter", [style({ left: "100vw" })]),
+  query(":leave", [style({ left: "4.5rem" })]),
   group([
-    query(":leave", [
-      animate("300ms ease-out", style({ left: "-100vw" }))
-    ]),
-    query(":enter", [
-      animate("300ms ease-out", style({ left: "4.5rem" }))
-    ])
-  ])
+    query(":leave", [animate("300ms ease-out", style({ left: "-100vw" }))]),
+    query(":enter", [animate("300ms ease-out", style({ left: "4.5rem" }))]),
+  ]),
 ];
 
 const slideLeft = [
@@ -81,23 +72,15 @@ const slideLeft = [
     style({
       position: "absolute",
       top: 0,
-      width: "calc(100% - 4.5rem)"
-    })
+      width: "calc(100% - 4.5rem)",
+    }),
   ]),
-  query(":enter", [
-    style({ left: "-100vw" })
-  ]),
-  query(":leave", [
-    style({ left: "4.5rem" })
-  ]),
+  query(":enter", [style({ left: "-100vw" })]),
+  query(":leave", [style({ left: "4.5rem" })]),
   group([
-    query(":leave", [
-      animate("300ms ease-out", style({ left: "100vw"}))
-    ]),
-    query(":enter", [
-      animate("300ms ease-out", style({ left: "4.5rem" }))
-    ])
-  ])
+    query(":leave", [animate("300ms ease-out", style({ left: "100vw" }))]),
+    query(":enter", [animate("300ms ease-out", style({ left: "4.5rem" }))]),
+  ]),
 ];
 
 export const routeAnimations = trigger("routeAnimations", [
@@ -115,5 +98,5 @@ export const routeAnimations = trigger("routeAnimations", [
   transition("bug => contact", slideDown),
   transition("bug => *", slideUp),
   transition("contact => *", slideUp),
-  transition("* <=> *", slideUp)
+  transition("* <=> *", slideUp),
 ]);

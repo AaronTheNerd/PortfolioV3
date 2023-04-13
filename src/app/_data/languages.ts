@@ -8,12 +8,12 @@ export enum Language {
   java = "java",
   matlab = "matlab",
   arduino = "arduino",
-  verilog = "verilog"
+  verilog = "verilog",
 }
 
 export function display(lang: Language): string {
   let displayLang = "";
-  let titleCase = new TitleCasePipe();
+  const titleCase = new TitleCasePipe();
   switch (lang) {
     case Language.cpp:
       displayLang = "C++";

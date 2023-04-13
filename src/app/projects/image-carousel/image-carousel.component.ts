@@ -1,36 +1,35 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input } from "@angular/core";
 import { animate, style, transition, trigger } from "@angular/animations";
 
 @Component({
-  selector: 'app-image-carousel',
-  templateUrl: './image-carousel.component.html',
-  styleUrls: ['./image-carousel.component.css'],
+  selector: "app-image-carousel",
+  templateUrl: "./image-carousel.component.html",
+  styleUrls: ["./image-carousel.component.css"],
   animations: [
     trigger("fade", [
       transition("false=>true", [
         style({ opacity: 0 }),
-        animate("2500ms 2000ms", style({ opacity: 1 }))
-      ])
+        animate("2500ms 2000ms", style({ opacity: 1 })),
+      ]),
     ]),
     trigger("fade2", [
       transition("false=>true", [
         style({ opacity: 0 }),
-        animate("2500ms", style({ opacity: 1 }))
+        animate("2500ms", style({ opacity: 1 })),
       ]),
       transition("true=>false", [
-        animate("2500ms 2000ms", style({ opacity: 0 }))
-      ])
-    ])
-  ]
+        animate("2500ms 2000ms", style({ opacity: 0 })),
+      ]),
+    ]),
+  ],
 })
-
 export class ImageCarouselComponent {
   @Input() images: string[] = [];
 
-  toggle: boolean = false;
-  count: number = 0;
-  toggle2: boolean = false;
-  count2: number = 0;
+  toggle = false;
+  count = 0;
+  toggle2 = false;
+  count2 = 0;
 
   onFade(event: any) {
     if (event.fromState) {

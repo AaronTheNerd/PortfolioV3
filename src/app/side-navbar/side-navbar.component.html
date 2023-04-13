@@ -1,13 +1,8 @@
-
 <div class="navbar-main d-flex flex-column flex-shrink-0 text-white bg-dark2" style="width: 4.5rem;">
   <ul class="nav nav-pills nav-flush flex-column mt-auto mb-auto text-center">
     <li *ngFor="let route of routes">
-      <a 
-          routerLink="{{route.path}}"
-          class="nav-link py-3"
-          routerLinkActive="active"
-          [routerLinkActiveOptions]="{ exact: true }"
-          title="{{route.label}}">
+      <a routerLink="{{route.path}}" class="nav-link py-3" routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }" title="{{route.label}}">
         <mat-icon width="40" height="32" aria-hidden="false">{{route.icon}}</mat-icon>
       </a>
     </li>

@@ -1,16 +1,16 @@
-import { TestBed } from '@angular/core/testing';
+import { TestBed } from "@angular/core/testing";
 
-import { FilterService } from './filter.service';
+import { FilterSortService } from "./filter.service";
 
-describe('FilterService', () => {
-  let service: FilterService;
+describe("FilterService", () => {
+  let service: FilterSortService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(FilterService);
+    service = TestBed.inject(FilterSortService);
   });
 
-  it('should be created', () => {
+  it("should be created", () => {
     expect(service).toBeTruthy();
   });
 });
