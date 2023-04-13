@@ -4,8 +4,9 @@ import { IProject } from '../interfaces/project';
 import { Sorts } from 'src/app/_data/sorts';
 import { formatDate } from '@angular/common';
 import { Observable, switchMap, of } from 'rxjs';
-import { Language } from '../_data/languages';
+import { Language, display } from '../_data/languages';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-projects',
@@ -21,6 +22,8 @@ export class ProjectsComponent {
   filterLangs$: Observable<Map<Language, boolean>>;
 
   githubIcon = faGithub;
+  starIcon = faStar;
+  displayLang = display;
 
   constructor(public filterSortService: FilterSortService) {
     this.projects$ = this.filterSortService.getState()

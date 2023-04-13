@@ -12,43 +12,14 @@ export const PROJECTS: IProject[] = [
         id: 'top',
         content: `<p>A Discord bot written in Python which utilizes the discord.py library to play music and assist in virtual D&D sessions in my friend's Discord server. The bot utilizes the youtubeDL library to search and download music from YouTube, which is then played through a voice channel in the server. In addition to music playback, the bot has commands for rolling dice, which can be used to simulate actions and combat in D&D sessions. The bot can roll various types of dice with customizable modifiers and provide the results in the chat. Through this project, I gained experience in integrating APIs, programming with Python, and developing a customized bot for multiple use cases as requested by users.</p>`,
         subsections: []
-      },
-      {
-        id: 'tech',
-        title: 'Technical Specifications',
-        content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis gravida neque convallis a cras semper. Adipiscing bibendum est ultricies integer quis auctor. Convallis aenean et tortor at risus viverra adipiscing at. Nibh sit amet commodo nulla facilisi. Odio facilisis mauris sit amet massa vitae. In fermentum posuere urna nec tincidunt. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Convallis tellus id interdum velit laoreet id donec. Metus aliquam eleifend mi in nulla posuere sollicitudin. Lorem ipsum dolor sit amet consectetur adipiscing. Quis varius quam quisque id diam vel. Et ligula ullamcorper malesuada proin libero nunc consequat interdum varius. Condimentum mattis pellentesque id nibh tortor id aliquet lectus proin. Et tortor consequat id porta nibh venenatis cras sed. Adipiscing elit duis tristique sollicitudin. Quam elementum pulvinar etiam non.
-        <br/><br/>
-        Lectus nulla at volutpat diam ut venenatis tellus in metus. Sed vulputate mi sit amet mauris. Lectus urna duis convallis convallis tellus id. Dui vivamus arcu felis bibendum ut tristique et. Felis donec et odio pellentesque. Mauris in aliquam sem fringilla. Dui id ornare arcu odio ut sem nulla pharetra. Eget aliquet nibh praesent tristique magna sit amet purus. Turpis egestas pretium aenean pharetra magna ac. Id eu nisl nunc mi ipsum faucibus. Mauris in aliquam sem fringilla ut morbi. Velit aliquet sagittis id consectetur purus ut faucibus pulvinar.
-        <br/><br/>
-        Nunc pulvinar sapien et ligula ullamcorper malesuada proin. Vel pharetra vel turpis nunc. Ipsum dolor sit amet consectetur adipiscing. Id semper risus in hendrerit gravida. Nisi quis eleifend quam adipiscing vitae. Molestie a iaculis at erat pellentesque adipiscing. Risus ultricies tristique nulla aliquet enim tortor at auctor urna. Eget aliquet nibh praesent tristique. Purus sit amet luctus venenatis lectus magna fringilla. Vel facilisis volutpat est velit egestas dui id ornare arcu. Bibendum est ultricies integer quis auctor elit sed vulputate. Nisi lacus sed viverra tellus in hac habitasse. Dignissim enim sit amet venenatis urna cursus eget nunc. Elementum integer enim neque volutpat. In nibh mauris cursus mattis molestie. Cras ornare arcu dui vivamus arcu felis bibendum. Placerat vestibulum lectus mauris ultrices eros. Velit dignissim sodales ut eu sem integer vitae justo eget. At consectetur lorem donec massa sapien faucibus.
-        <br/><br/>
-        Ipsum suspendisse ultrices gravida dictum fusce ut placerat orci. Vulputate ut pharetra sit amet. Bibendum ut tristique et egestas. Neque ornare aenean euismod elementum nisi quis. Ac tortor dignissim convallis aenean et tortor. Adipiscing commodo elit at imperdiet. Amet nisl suscipit adipiscing bibendum est. Diam vulputate ut pharetra sit amet aliquam id diam. Dolor sed viverra ipsum nunc aliquet bibendum. Tincidunt id aliquet risus feugiat in ante. Enim ut tellus elementum sagittis vitae et leo duis ut.
-        <br/><br/>
-        Ut morbi tincidunt augue interdum velit euismod in pellentesque. Proin sagittis nisl rhoncus mattis rhoncus urna neque viverra justo. Sed risus ultricies tristique nulla aliquet enim tortor at. Id ornare arcu odio ut sem nulla pharetra diam sit. Morbi tincidunt augue interdum velit euismod in pellentesque massa placerat. Quam viverra orci sagittis eu volutpat odio facilisis mauris sit. Nec tincidunt praesent semper feugiat. Urna nec tincidunt praesent semper feugiat nibh. Risus nullam eget felis eget nunc lobortis mattis aliquam. Molestie at elementum eu facilisis. Volutpat sed cras ornare arcu dui vivamus arcu felis bibendum. Pretium lectus quam id leo in vitae turpis massa sed. Pharetra massa massa ultricies mi quis hendrerit dolor magna. Purus in massa tempor nec. Mauris rhoncus aenean vel elit scelerisque mauris. In nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Sagittis orci a scelerisque purus semper eget duis at tellus. Adipiscing elit duis tristique sollicitudin nibh sit amet commodo. Vitae tempus quam pellentesque nec nam aliquam.
-        <br/><br/>`,
-        subsections: [
-          {
-            id: 'used-tech',
-            title: 'Technologies Used',
-            content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis gravida neque convallis a cras semper. Adipiscing bibendum est ultricies integer quis auctor. Convallis aenean et tortor at risus viverra adipiscing at. Nibh sit amet commodo nulla facilisi. Odio facilisis mauris sit amet massa vitae. In fermentum posuere urna nec tincidunt. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Convallis tellus id interdum velit laoreet id donec. Metus aliquam eleifend mi in nulla posuere sollicitudin. Lorem ipsum dolor sit amet consectetur adipiscing. Quis varius quam quisque id diam vel. Et ligula ullamcorper malesuada proin libero nunc consequat interdum varius. Condimentum mattis pellentesque id nibh tortor id aliquet lectus proin. Et tortor consequat id porta nibh venenatis cras sed. Adipiscing elit duis tristique sollicitudin. Quam elementum pulvinar etiam non.
-            <br/><br/>
-            Lectus nulla at volutpat diam ut venenatis tellus in metus. Sed vulputate mi sit amet mauris. Lectus urna duis convallis convallis tellus id. Dui vivamus arcu felis bibendum ut tristique et. Felis donec et odio pellentesque. Mauris in aliquam sem fringilla. Dui id ornare arcu odio ut sem nulla pharetra. Eget aliquet nibh praesent tristique magna sit amet purus. Turpis egestas pretium aenean pharetra magna ac. Id eu nisl nunc mi ipsum faucibus. Mauris in aliquam sem fringilla ut morbi. Velit aliquet sagittis id consectetur purus ut faucibus pulvinar.
-            <br/><br/>
-            Nunc pulvinar sapien et ligula ullamcorper malesuada proin. Vel pharetra vel turpis nunc. Ipsum dolor sit amet consectetur adipiscing. Id semper risus in hendrerit gravida. Nisi quis eleifend quam adipiscing vitae. Molestie a iaculis at erat pellentesque adipiscing. Risus ultricies tristique nulla aliquet enim tortor at auctor urna. Eget aliquet nibh praesent tristique. Purus sit amet luctus venenatis lectus magna fringilla. Vel facilisis volutpat est velit egestas dui id ornare arcu. Bibendum est ultricies integer quis auctor elit sed vulputate. Nisi lacus sed viverra tellus in hac habitasse. Dignissim enim sit amet venenatis urna cursus eget nunc. Elementum integer enim neque volutpat. In nibh mauris cursus mattis molestie. Cras ornare arcu dui vivamus arcu felis bibendum. Placerat vestibulum lectus mauris ultrices eros. Velit dignissim sodales ut eu sem integer vitae justo eget. At consectetur lorem donec massa sapien faucibus.
-            <br/><br/>
-            Ipsum suspendisse ultrices gravida dictum fusce ut placerat orci. Vulputate ut pharetra sit amet. Bibendum ut tristique et egestas. Neque ornare aenean euismod elementum nisi quis. Ac tortor dignissim convallis aenean et tortor. Adipiscing commodo elit at imperdiet. Amet nisl suscipit adipiscing bibendum est. Diam vulputate ut pharetra sit amet aliquam id diam. Dolor sed viverra ipsum nunc aliquet bibendum. Tincidunt id aliquet risus feugiat in ante. Enim ut tellus elementum sagittis vitae et leo duis ut.
-            <br/><br/>
-            Ut morbi tincidunt augue interdum velit euismod in pellentesque. Proin sagittis nisl rhoncus mattis rhoncus urna neque viverra justo. Sed risus ultricies tristique nulla aliquet enim tortor at. Id ornare arcu odio ut sem nulla pharetra diam sit. Morbi tincidunt augue interdum velit euismod in pellentesque massa placerat. Quam viverra orci sagittis eu volutpat odio facilisis mauris sit. Nec tincidunt praesent semper feugiat. Urna nec tincidunt praesent semper feugiat nibh. Risus nullam eget felis eget nunc lobortis mattis aliquam. Molestie at elementum eu facilisis. Volutpat sed cras ornare arcu dui vivamus arcu felis bibendum. Pretium lectus quam id leo in vitae turpis massa sed. Pharetra massa massa ultricies mi quis hendrerit dolor magna. Purus in massa tempor nec. Mauris rhoncus aenean vel elit scelerisque mauris. In nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Sagittis orci a scelerisque purus semper eget duis at tellus. Adipiscing elit duis tristique sollicitudin nibh sit amet commodo. Vitae tempus quam pellentesque nec nam aliquam.`,
-            subsections: []
-          }
-        ]
       }
     ],
     tags: ['Discord.py', 'Bot', 'Coroutines', 'Youtube-dl', 'User Feedback', 'Bug Fixes'],
     created: new Date("2021-09-01"),
     modified: new Date("2022-11-01"),
     gitLink: "https://github.com/AaronTheNerd/DiscordBot",
-    thumbnails: ["assets/thumbnails/discord.webp"]
+    thumbnails: ["assets/thumbnails/discord.webp"],
+    favorite: true
   },
   {
     id: 2,
@@ -111,7 +82,8 @@ export const PROJECTS: IProject[] = [
     created: new Date("2020-11-01"),
     modified: new Date("2021-07-01"),
     gitLink: 'https://github.com/AaronTheNerd/uInteger',
-    thumbnails: []
+    thumbnails: [],
+    favorite: true
   },
   {
     id: 5,
@@ -207,7 +179,8 @@ export const PROJECTS: IProject[] = [
     created: new Date("2020-10-01"),
     modified: new Date("2020-12-01"),
     gitLink: 'https://github.com/AaronTheNerd/CSCE611/tree/master/lab_jb',
-    thumbnails: ["assets/thumbnails/de2-115.png"]
+    thumbnails: ["assets/thumbnails/de2-115.png"],
+    favorite: true
   },
   {
     id: 11,
@@ -278,9 +251,8 @@ export const PROJECTS: IProject[] = [
     created: new Date("2019-12-01"),
     modified: new Date("2019-12-08"),
     gitLink: 'https://github.com/AaronTheNerd/Personal-Coding-Projects/tree/master/MatLab/AudioVisualizer',
-    thumbnails: [
-      "assets/thumbnails/visualizer.jpg"
-    ]
+    thumbnails: ["assets/thumbnails/visualizer.jpg"],
+    favorite: true
   },
   {
     id: 15,

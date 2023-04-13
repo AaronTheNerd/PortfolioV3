@@ -94,11 +94,17 @@
           </div>
         </div>
         <div>
-          <a *ngIf="proj.gitLink" [href]="proj.gitLink" class="mx-1" style="color: #000; z-index: 100; vertical-align: middle;" role="button">
-            <fa-icon [icon]="githubIcon" class="h3"></fa-icon>
+          <ng-template #favoriteTip>This is my favorite {{displayLang(proj.languages[0])}} project</ng-template>
+          <ng-template #githubTip>Link to source</ng-template>
+          <ng-template #schoolTip>This is a University project</ng-template>
+
+          <fa-icon *ngIf="proj.favorite" [icon]="starIcon" [ngbTooltip]="favoriteTip" class="h3 mx-1" style="z-index: 100; vertical-align: middle;"></fa-icon>
+          <a *ngIf="proj.gitLink" [href]="proj.gitLink" [ngbTooltip]="githubTip" class="mx-1" style="color: #000; z-index: 100; vertical-align: middle;" role="button">
+            <fa-icon [icon]="githubIcon" class="h3" style="vertical-align: middle;"></fa-icon>
           </a>
-          &nbsp;
-          <img *ngIf="proj.school" src="assets/USC.png" style="height: calc(1.3rem + .6vw); z-index: 100;" matTooltip="Info about the action">
+          <span class="mx-2">
+            <img *ngIf="proj.school" src="assets/USC.png" [ngbTooltip]="schoolTip" style="height: calc(1.3rem + .6vw); z-index: 100; vertical-align: middle;" />
+          </span>
         </div>
       </div>
       <div *ngIf="proj.thumbnails.length" class="col-auto d-md-none d-lg-block p-0 my-auto">

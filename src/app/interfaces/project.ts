@@ -11,6 +11,7 @@ export interface IProject {
   created: Date;
   gitLink?: string;
   thumbnails: string[];
+  favorite?: boolean;
 }
 
 export interface IDetailSection {
