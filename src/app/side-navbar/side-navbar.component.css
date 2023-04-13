@@ -10,10 +10,12 @@
 .nav-flush .nav-link {
   border-radius: 0;
   display: inline-block;
+  width: 100%;
 }
 
 .navbar-main mat-icon {
   color: var(--bs-light);
+  vertical-align: middle;
 }
 
 .navbar-main a:hover mat-icon {
