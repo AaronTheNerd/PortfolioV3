@@ -36,13 +36,15 @@
   <div
     #collapse="ngbCollapse"
     [(ngbCollapse)]="filterSortService.isCollapsed"
-    class="p-3">
-    <div class="row">
+    id="filter-div"
+    class="px-3 py-0">
+    <div class="row p-2 bg-white rounded">
       <div class="col-auto border-end px-3">
-        <ul class="filter-ul">
-          <li *ngFor="let item of filterLangs$ | async | keyvalue">
+        <ul class="bg-light">
+          <li
+            *ngFor="let item of filterLangs$ | async | keyvalue"
+            class="d-block">
             <mat-checkbox
-              class="text-white"
               color="primary"
               [checked]="item.value"
               (change)="
@@ -54,7 +56,13 @@
         </ul>
       </div>
 
-      <div class="col-auto border-end px-3">
+      <div class="col-auto px-3">
+        <mat-checkbox
+          color="primary"
+          [checked]="filterSchool$ | async"
+          (change)="filterSortService.setSchoolFilter($event.checked)">
+          Include School Projects
+        </mat-checkbox>
         <button
           class="btn btn-primary d-block"
           (click)="filterSortService.enableAllLangs()">
@@ -65,16 +73,6 @@
           (click)="filterSortService.disableAllLangs()">
           Disable All Languages
         </button>
-      </div>
-
-      <div class="col-auto px-3">
-        <mat-checkbox
-          class="text-white"
-          color="primary"
-          [checked]="filterSchool$ | async"
-          (change)="filterSortService.setSchoolFilter($event.checked)">
-          Include School Projects
-        </mat-checkbox>
       </div>
     </div>
   </div>
