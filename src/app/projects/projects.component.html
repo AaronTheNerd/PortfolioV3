@@ -109,10 +109,7 @@
             </ng-template>
           </span>
         </h1>
-        <div
-          class="pb-3"
-          *ngIf="proj.sections.length"
-          [innerHTML]="proj.description | truncate : 200"></div>
+        <div class="pb-3" [innerHTML]="proj.description | truncate : 200"></div>
         <div *ngIf="proj.tags.length" class="row pb-2">
           <div class="col-auto">
             <div>
