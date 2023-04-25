@@ -1,7 +1,25 @@
-<pre class="rounded bg-dark2 px-2">
-  <code
-    [highlight]="content"
-    [languages]="languages"
-    [lineNumbers]="lineNumbers">
-  </code>
-</pre>
+<div class="rounded bg-primary">
+  <div
+    class="p-3 cursor-pointer"
+    (click)="isCollapsed = !isCollapsed"
+    [attr.aria-expanded]="!isCollapsed"
+    aria-controls="collapseCode">
+    <span class="h6 inline-block" [innerText]="title"></span>
+    <p class="h6 m-0 inline-block float-end">
+      <mat-icon
+        aria-hidden="false"
+        aria-label="Expand/Collapse"
+        [fontIcon]="isCollapsed ? 'add' : 'remove'"></mat-icon>
+    </p>
+  </div>
+  <pre
+    class="bg-dark2 px-2"
+    #collapse="ngbCollapse"
+    [(ngbCollapse)]="isCollapsed">
+    <code
+      [highlight]="content"
+      [languages]="languages"
+      [lineNumbers]="lineNumbers">
+    </code>
+  </pre>
+</div>

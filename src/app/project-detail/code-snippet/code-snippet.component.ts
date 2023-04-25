@@ -9,9 +9,12 @@ const theme = "assets/styles/oneDarkProDarker.css";
   styleUrls: ["./code-snippet.component.css"],
 })
 export class CodeSnippetComponent {
+  @Input() title = "";
   @Input() content = "";
   @Input() languages: string[] = ["typescript"];
   @Input() lineNumbers = true;
+
+  isCollapsed = true;
 
   constructor(private hljsLoader: HighlightLoader) {
     this.hljsLoader.setTheme(theme);
