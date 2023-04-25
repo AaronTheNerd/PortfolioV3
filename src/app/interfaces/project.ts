@@ -1,3 +1,5 @@
+import { Type } from "@angular/core";
+import { IProjectComponent } from "../project-detail/project.component";
 import { Language } from "../_data/languages";
 
 export interface IProject {
@@ -5,7 +7,9 @@ export interface IProject {
   title: string;
   school: boolean;
   languages: Language[];
-  sections: IDetailSection[];
+  description: string;
+  component: Type<IProjectComponent>;
+  sections: ISection[];
   tags: string[];
   modified: Date;
   created: Date;
@@ -14,9 +18,8 @@ export interface IProject {
   favorite?: boolean;
 }
 
-export interface IDetailSection {
+export interface ISection {
   id: string;
-  title?: string;
-  content: string;
-  subsections: IDetailSection[];
+  title: string;
+  subsections: ISection[];
 }

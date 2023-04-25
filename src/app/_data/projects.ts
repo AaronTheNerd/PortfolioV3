@@ -1,4 +1,22 @@
 import { IProject } from "../interfaces/project";
+import { Project1Component } from "../project-detail/projects/project1/project1.component";
+import { Project10Component } from "../project-detail/projects/project10/project10.component";
+import { Project11Component } from "../project-detail/projects/project11/project11.component";
+import { Project12Component } from "../project-detail/projects/project12/project12.component";
+import { Project13Component } from "../project-detail/projects/project13/project13.component";
+import { Project14Component } from "../project-detail/projects/project14/project14.component";
+import { Project15Component } from "../project-detail/projects/project15/project15.component";
+import { Project16Component } from "../project-detail/projects/project16/project16.component";
+import { Project17Component } from "../project-detail/projects/project17/project17.component";
+import { Project18Component } from "../project-detail/projects/project18/project18.component";
+import { Project19Component } from "../project-detail/projects/project19/project19.component";
+import { Project2Component } from "../project-detail/projects/project2/project2.component";
+import { Project3Component } from "../project-detail/projects/project3/project3.component";
+import { Project4Component } from "../project-detail/projects/project4/project4.component";
+import { Project5Component } from "../project-detail/projects/project5/project5.component";
+import { Project6Component } from "../project-detail/projects/project6/project6.component";
+import { Project7Component } from "../project-detail/projects/project7/project7.component";
+import { Project9Component } from "../project-detail/projects/project9/project9.component";
 import { Language } from "./languages";
 
 export const PROJECTS: IProject[] = [
@@ -7,10 +25,28 @@ export const PROJECTS: IProject[] = [
     title: "Discord Bot",
     school: false,
     languages: [Language.py],
+    description: `A Discord bot written in Python which utilizes the discord.py library to play music and assist in virtual D&D sessions in my friend's Discord server. The bot utilizes the youtubeDL library to search and download music from YouTube, which is then played through a voice channel in the server. In addition to music playback, the bot has commands for rolling dice, which can be used to simulate actions and combat in D&D sessions. The bot can roll various types of dice with customizable modifiers and provide the results in the chat. Through this project, I gained experience in integrating APIs, programming with Python, and developing a customized bot for multiple use cases as requested by users.`,
+    component: Project1Component,
     sections: [
       {
-        id: "top",
-        content: `<p>A Discord bot written in Python which utilizes the discord.py library to play music and assist in virtual D&D sessions in my friend's Discord server. The bot utilizes the youtubeDL library to search and download music from YouTube, which is then played through a voice channel in the server. In addition to music playback, the bot has commands for rolling dice, which can be used to simulate actions and combat in D&D sessions. The bot can roll various types of dice with customizable modifiers and provide the results in the chat. Through this project, I gained experience in integrating APIs, programming with Python, and developing a customized bot for multiple use cases as requested by users.</p>`,
+        id: "specs",
+        title: "Specifications",
+        subsections: [
+          {
+            id: "configs",
+            title: "Configuration",
+            subsections: [],
+          },
+          {
+            id: "commands",
+            title: "Commands",
+            subsections: [],
+          },
+        ],
+      },
+      {
+        id: "credits",
+        title: "Credits",
         subsections: [],
       },
     ],
@@ -33,14 +69,9 @@ export const PROJECTS: IProject[] = [
     title: "Sorting Algorithm Visualizer",
     school: false,
     languages: [Language.cpp],
-    sections: [
-      {
-        id: "top",
-        content: `<p>A program written in C++ designed to provide a visual representation of various sorting algorithms. The program utilizes the GTK windowing toolkit to display the current state of the list being sorted, as well as information on which sort is currently running and how many swaps and lookups have occurred.
-        </p>`,
-        subsections: [],
-      },
-    ],
+    description: `A program written in C++ designed to provide a visual representation of various sorting algorithms. The program utilizes the GTK windowing toolkit to display the current state of the list being sorted, as well as information on which sort is currently running and how many swaps and lookups have occurred.`,
+    component: Project2Component,
+    sections: [],
     tags: ["GTK", "Multithreading", "Sorting Algorithms", "Visualizer"],
     created: new Date("2021-08-01"),
     modified: new Date("2021-08-31"),
@@ -56,14 +87,9 @@ export const PROJECTS: IProject[] = [
     title: "Seamless Triangular GIF Generator",
     school: false,
     languages: [Language.py],
-    sections: [
-      {
-        id: "top",
-        content: `<p>A Python program that generates mesmerizing animations of morphing triangles. The program utilizes a combination of mathematical algorithms and user customization to create unique and visually appealing GIFs.
-        </p>`,
-        subsections: [],
-      },
-    ],
+    description: `A Python program that generates mesmerizing animations of morphing triangles. The program utilizes a combination of mathematical algorithms and user customization to create unique and visually appealing GIFs.`,
+    component: Project3Component,
+    sections: [],
     tags: ["OpenSimplex", "PIL", "ImageMagick", "Delaunay Triangulation"],
     created: new Date("2021-05-01"),
     modified: new Date("2021-07-01"),
@@ -78,13 +104,9 @@ export const PROJECTS: IProject[] = [
     title: "Unsigned Arbitrary Precision Integer",
     school: false,
     languages: [Language.cpp],
-    sections: [
-      {
-        id: "top",
-        content: `<p>A C++ library that provides a powerful tool for handling large integer numbers with arbitrary precision. This object serves as a standard numeric type in C++ and offers a wide range of features to perform arithmetic operations on integers of any size.</p>`,
-        subsections: [],
-      },
-    ],
+    description: `A C++ library that provides a powerful tool for handling large integer numbers with arbitrary precision. This object serves as a standard numeric type in C++ and offers a wide range of features to perform arithmetic operations on integers of any size.`,
+    component: Project4Component,
+    sections: [],
     tags: ["Performance Testing", "Unit Testing", "Optimization", "Karatsuba"],
     created: new Date("2020-11-01"),
     modified: new Date("2021-07-01"),
@@ -97,13 +119,9 @@ export const PROJECTS: IProject[] = [
     title: "Programmable Christmas Tree",
     school: false,
     languages: [Language.py, Language.arduino],
-    sections: [
-      {
-        id: "top",
-        content: `<p>A DIY project that brings a unique and interactive twist to traditional holiday decorations. By utilizing an Arduino microcontroller and a Python program, this project allows users to program and customize the lighting patterns and animations on their Christmas tree, creating a dazzling and dynamic display.</p>`,
-        subsections: [],
-      },
-    ],
+    description: `A DIY project that brings a unique and interactive twist to traditional holiday decorations. By utilizing an Arduino microcontroller and a Python program, this project allows users to program and customize the lighting patterns and animations on their Christmas tree, creating a dazzling and dynamic display.`,
+    component: Project5Component,
+    sections: [],
     tags: ["Serial I/O", "Information Encoding/Decoding", "Arduino"],
     created: new Date("2020-11-01"),
     modified: new Date("2020-12-01"),
@@ -116,13 +134,9 @@ export const PROJECTS: IProject[] = [
     title: "High Precision Integer",
     school: false,
     languages: [Language.cpp],
-    sections: [
-      {
-        id: "top",
-        content: `<p>A C++ library that provides support for high precision arithmetic operations on large integers. This library is designed to act as a standard numeric type in C++, allowing for precise calculations with integers of any size, and it offers flexibility in setting the precision of the integers at compile time.</p>`,
-        subsections: [],
-      },
-    ],
+    description: `A C++ library that provides support for high precision arithmetic operations on large integers. This library is designed to act as a standard numeric type in C++, allowing for precise calculations with integers of any size, and it offers flexibility in setting the precision of the integers at compile time.`,
+    component: Project6Component,
+    sections: [],
     tags: [],
     created: new Date("2019-12-01"),
     modified: new Date("2019-12-31"),
@@ -134,13 +148,9 @@ export const PROJECTS: IProject[] = [
     title: "IMDb Webscraper",
     school: false,
     languages: [Language.py],
-    sections: [
-      {
-        id: "top",
-        content: `<p>A Python-based web scraping tool that allows users to retrieve the top-rated 250 movies from IMDb. The scraper utilizes popular Python libraries such as Selenium, BeautifulSoup, and Pandas to automate the process of extracting movie data from IMDb's website and exporting it to a spreadsheet for further use.</p>`,
-        subsections: [],
-      },
-    ],
+    description: `A Python-based web scraping tool that allows users to retrieve the top-rated 250 movies from IMDb. The scraper utilizes popular Python libraries such as Selenium, BeautifulSoup, and Pandas to automate the process of extracting movie data from IMDb's website and exporting it to a spreadsheet for further use.`,
+    component: Project7Component,
+    sections: [],
     tags: ["Webscraping", "Pandas", "BeutifulSoup", "Selenium"],
     created: new Date("2020-03-01"),
     modified: new Date("2020-03-30"),
@@ -153,13 +163,9 @@ export const PROJECTS: IProject[] = [
     title: "The Game of Life",
     school: false,
     languages: [Language.java],
-    sections: [
-      {
-        id: "top",
-        content: `<p>A Java program that implements Conway's Game of Life. The program provides a GUI that allows users to interactively simulate the evolution of a population of cells according to the rules of the Game of Life.</p>`,
-        subsections: [],
-      },
-    ],
+    description: `A Java program that implements Conway's Game of Life. The program provides a GUI that allows users to interactively simulate the evolution of a population of cells according to the rules of the Game of Life.`,
+    component: Project9Component,
+    sections: [],
     tags: ["Java AWT", "JavaX Swing"],
     created: new Date("2018-12-01"),
     modified: new Date("2018-12-31"),
@@ -176,13 +182,9 @@ export const PROJECTS: IProject[] = [
     title: "RISC-V CPU",
     school: true,
     languages: [Language.verilog],
-    sections: [
-      {
-        id: "top",
-        content: `<p>A Verilog-based implementation of a RISC-V CPU. This CPU is designed to simulate a three-stage pipeline for executing RISC-V instructions, including R-, I-, U-, J-, B-, and L-type instructions.</p>`,
-        subsections: [],
-      },
-    ],
+    description: `A Verilog-based implementation of a RISC-V CPU. This CPU is designed to simulate a three-stage pipeline for executing RISC-V instructions, including R-, I-, U-, J-, B-, and L-type instructions.`,
+    component: Project10Component,
+    sections: [],
     tags: [
       "RISC-V",
       "Assembly Programming",
@@ -200,13 +202,9 @@ export const PROJECTS: IProject[] = [
     title: "Simple HTTP Client",
     school: true,
     languages: [Language.java],
-    sections: [
-      {
-        id: "top",
-        content: `<p>A simple HTTP client program developed as an assignment for a computer networking course. The primary goal of this program is to send GET requests to standard web servers, retrieve HTTP responses, and handle one-hop HTTP redirects, while also allowing users to observe the HTTP requests and responses using Wireshark and save the response HTTP for further analysis.</p>`,
-        subsections: [],
-      },
-    ],
+    description: `A simple HTTP client program developed as an assignment for a computer networking course. The primary goal of this program is to send GET requests to standard web servers, retrieve HTTP responses, and handle one-hop HTTP redirects, while also allowing users to observe the HTTP requests and responses using Wireshark and save the response HTTP for further analysis.`,
+    component: Project11Component,
+    sections: [],
     tags: ["Wireshark", "HTTP"],
     created: new Date("2020-04-01"),
     modified: new Date("2020-04-08"),
@@ -217,13 +215,9 @@ export const PROJECTS: IProject[] = [
     title: "Roomba Interface",
     school: true,
     languages: [Language.py],
-    sections: [
-      {
-        id: "top",
-        content: `<p>A Python program that was developed as part of an assignment for a Robotics course. The program provides a way for a computer to interface with a Roomba. The Roomba Interface enables users to parse input from all the sensors on the Roomba, as well as send commands to drive the Roomba, all while operating asynchronously in separate threads.</p>`,
-        subsections: [],
-      },
-    ],
+    description: `A Python program that was developed as part of an assignment for a Robotics course. The program provides a way for a computer to interface with a Roomba. The Roomba Interface enables users to parse input from all the sensors on the Roomba, as well as send commands to drive the Roomba, all while operating asynchronously in separate threads.`,
+    component: Project12Component,
+    sections: [],
     tags: [
       "Raspberry Pi",
       "Serial I/O",
@@ -241,13 +235,9 @@ export const PROJECTS: IProject[] = [
     title: "Simple TCP Connection",
     school: true,
     languages: [Language.java],
-    sections: [
-      {
-        id: "top",
-        content: `<p>The Java TCP Connection is a simple TCP implementation developed as an assignment for a computer networking course. The primary goal of this program is to create a reliable and congestion-aware data transfer mechanism over an existing UDP connection, providing reliable and ordered delivery of data between two endpoints.</p>`,
-        subsections: [],
-      },
-    ],
+    description: `The Java TCP Connection is a simple TCP implementation developed as an assignment for a computer networking course. The primary goal of this program is to create a reliable and congestion-aware data transfer mechanism over an existing UDP connection, providing reliable and ordered delivery of data between two endpoints.`,
+    component: Project13Component,
+    sections: [],
     tags: ["TCP Connection"],
     created: new Date("2020-04-01"),
     modified: new Date("2020-04-08"),
@@ -259,13 +249,9 @@ export const PROJECTS: IProject[] = [
     title: "Audio Visualizer",
     school: true,
     languages: [Language.matlab],
-    sections: [
-      {
-        id: "top",
-        content: `<p>A MATLAB program developed as an assignment for a Signals and Systems course. The primary goal of this program is to provide a visual representation of an audio file loaded into MATLAB, displaying the components of the current waveform in real-time using the FFT algorithm. The program also incorporates visually appealing "falling bars" to add an extra aesthetic touch to the visualization.</p>`,
-        subsections: [],
-      },
-    ],
+    description: `A MATLAB program developed as an assignment for a Signals and Systems course. The primary goal of this program is to provide a visual representation of an audio file loaded into MATLAB, displaying the components of the current waveform in real-time using the FFT algorithm. The program also incorporates visually appealing "falling bars" to add an extra aesthetic touch to the visualization.`,
+    component: Project14Component,
+    sections: [],
     tags: ["FFT", "Visualizer"],
     created: new Date("2019-12-01"),
     modified: new Date("2019-12-08"),
@@ -279,13 +265,9 @@ export const PROJECTS: IProject[] = [
     title: "Coin-Row and Robot-Coin Solution",
     school: true,
     languages: [Language.cpp],
-    sections: [
-      {
-        id: "top",
-        content: `<p>A C++ program developed as an assignment for a Data Structures and Algorithms course. This program implements dynamic programming techniques to solve two classic problems: the Coin-Row problem and the Robot-Coin problem.</p>`,
-        subsections: [],
-      },
-    ],
+    description: `A C++ program developed as an assignment for a Data Structures and Algorithms course. This program implements dynamic programming techniques to solve two classic problems: the Coin-Row problem and the Robot-Coin problem.`,
+    component: Project15Component,
+    sections: [],
     tags: [],
     created: new Date("2019-04-01"),
     modified: new Date("2019-04-08"),
@@ -298,13 +280,9 @@ export const PROJECTS: IProject[] = [
     title: "Simulated SPI Transactions",
     school: true,
     languages: [Language.cpp],
-    sections: [
-      {
-        id: "top",
-        content: `<p>A C++ program that was developed as an assignment for a Computer Systems course. The goal of the project was to implement a simulation of an SPI transfer between two simulated devices using bit-banging techniques. The program emulates the SPI communication protocol, allowing for data exchange between the simulated devices.</p>`,
-        subsections: [],
-      },
-    ],
+    description: `A C++ program that was developed as an assignment for a Computer Systems course. The goal of the project was to implement a simulation of an SPI transfer between two simulated devices using bit-banging techniques. The program emulates the SPI communication protocol, allowing for data exchange between the simulated devices.`,
+    component: Project16Component,
+    sections: [],
     tags: ["SPI Data Transfer", "Bit Manipulation"],
     created: new Date("2020-04-01"),
     modified: new Date("2020-04-08"),
@@ -316,13 +294,9 @@ export const PROJECTS: IProject[] = [
     title: "Custom Syscall",
     school: true,
     languages: [Language.c],
-    sections: [
-      {
-        id: "top",
-        content: `<p>A C program that was developed as part of an assignment for an Operating Systems course. This program involves adding a custom system call to the Linux kernel, requiring the recompilation of the kernel. The custom syscall allows users to walk through the memory of a program and determine the permissions of a specific block of memory.</p>`,
-        subsections: [],
-      },
-    ],
+    description: `A C program that was developed as part of an assignment for an Operating Systems course. This program involves adding a custom system call to the Linux kernel, requiring the recompilation of the kernel. The custom syscall allows users to walk through the memory of a program and determine the permissions of a specific block of memory.`,
+    component: Project17Component,
+    sections: [],
     tags: ["Linux Kernel", "Virtual Memory"],
     created: new Date("2019-11-01"),
     modified: new Date("2019-11-08"),
@@ -333,13 +307,9 @@ export const PROJECTS: IProject[] = [
     title: "Runtime Optimization of MergeSort via Multithreading",
     school: true,
     languages: [Language.cpp],
-    sections: [
-      {
-        id: "top",
-        content: `<p>A C++ program that was developed as part of an assignment for a Statistics course. The aim of the project was to optimize the runtime of the mergeSort algorithm by leveraging multithreading techniques. The program allows for adjusting the number of worker threads available to the mergeSort algorithm and measures the runtime to find the optimal number of threads that can optimize the algorithm's performance.</p>`,
-        subsections: [],
-      },
-    ],
+    description: `A C++ program that was developed as part of an assignment for a Statistics course. The aim of the project was to optimize the runtime of the mergeSort algorithm by leveraging multithreading techniques. The program allows for adjusting the number of worker threads available to the mergeSort algorithm and measures the runtime to find the optimal number of threads that can optimize the algorithm's performance.`,
+    component: Project18Component,
+    sections: [],
     tags: ["Multithreading", "Performance Analysis"],
     created: new Date("2019-11-01"),
     modified: new Date("2019-12-01"),
@@ -352,13 +322,9 @@ export const PROJECTS: IProject[] = [
     title: "All Possible Words from Grid",
     school: true,
     languages: [Language.java],
-    sections: [
-      {
-        id: "top",
-        content: `<p>A Java program that was developed as an extra-credit assignment for a Computer Science course. The aim of the project was to create a program that can loop through a grid of characters and find all valid words by connecting the characters in different directions.</p>`,
-        subsections: [],
-      },
-    ],
+    description: `A Java program that was developed as an extra-credit assignment for a Computer Science course. The aim of the project was to create a program that can loop through a grid of characters and find all valid words by connecting the characters in different directions.`,
+    component: Project19Component,
+    sections: [],
     tags: [],
     created: new Date("2018-04-01"),
     modified: new Date("2018-04-08"),
