@@ -12,7 +12,9 @@
     <div
       #overlay
       class="overlay"
-      [ngStyle]="isCollapsed ? { opacity: null } : { opacity: '0' }"></div>
+      [ngStyle]="
+        isCollapsed ? { opacity: null } : { opacity: '0', display: 'none' }
+      "></div>
     <pre
       #codeRegion
       class="bg-dark2 px-2 collapsible"
