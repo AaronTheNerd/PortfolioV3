@@ -9,17 +9,10 @@ export interface IProject {
   languages: Language[];
   description: string;
   component: Type<IProjectComponent>;
-  sections: ISection[];
   tags: string[];
   modified: Date;
   created: Date;
   gitLink?: string;
   thumbnails: string[];
   favorite?: boolean;
-}
-
-export interface ISection {
-  id: string;
-  title: string;
-  subsections: ISection[];
 }

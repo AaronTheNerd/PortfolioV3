@@ -1,12 +1,13 @@
 <div class="row project-content">
   <div class="col-auto">
-    <app-table-of-contents
-      [sections]="project.sections"></app-table-of-contents>
+    <app-table-of-contents></app-table-of-contents>
   </div>
   <div class="col">
     <p id="top" class="display-5 mb-0" [innerText]="project.title"></p>
     <hr class="hr mt-0" />
     <p [innerText]="project.description"></p>
-    <ng-template appProjectDetail [project]="project"></ng-template>
+    <div id="project-detail">
+      <ng-template appProjectDetail [project]="project"></ng-template>
+    </div>
   </div>
 </div>

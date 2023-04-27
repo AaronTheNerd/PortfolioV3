@@ -20,6 +20,17 @@
             class="btn text-primary">
             {{ subsection.title }}
           </button>
+          <div *ngIf="subsection.subsections as subsubsections">
+            <ul>
+              <li *ngFor="let subsubsection of subsubsections">
+                <button
+                  (click)="scroller.scrollToAnchor(subsubsection.id)"
+                  class="btn text-primary">
+                  {{ subsubsection.title }}
+                </button>
+              </li>
+            </ul>
+          </div>
         </li>
       </ul>
     </div>
