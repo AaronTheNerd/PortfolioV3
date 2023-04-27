@@ -1,5 +1,6 @@
 <div>
-  <app-section-heading id="specs" title="Specifications"></app-section-heading>
+  <app-section-heading id="docs" title="Documentation"></app-section-heading>
+
   <app-subsection-heading
     id="configs"
     title="Configuration"></app-subsection-heading>
@@ -12,8 +13,28 @@
     [content]="configs"
     [languages]="['typescript']"
     [lineNumbers]="true"></app-code-snippet>
+
   <app-subsection-heading
     id="commands"
     title="Commands"></app-subsection-heading>
+  <p>
+    Discord's API utilizes cogs to group and categorize the different commands.
+    These are the cogs which my Discord bot has.
+  </p>
+  <app-subsubsection-heading title="Music"></app-subsubsection-heading>
+  <app-command-list [commands]="music_commands"></app-command-list>
+
+  <app-subsubsection-heading title="DnD"></app-subsubsection-heading>
+  <app-command-list [commands]="dnd_commands"></app-command-list>
+
+  <app-subsubsection-heading title="Misc"></app-subsubsection-heading>
+  <app-command-list [commands]="misc_commands"></app-command-list>
+
+  <app-subsection-heading id="events" title="Events"></app-subsection-heading>
+
+  <app-section-heading
+    id="specs"
+    title="Technical Specifications"></app-section-heading>
+
   <app-section-heading id="credits" title="Credits"></app-section-heading>
 </div>

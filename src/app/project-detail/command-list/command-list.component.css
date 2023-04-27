@@ -1,0 +1,4 @@
+tbody tr:last-child {
+  border-style: none;
+  border: none;
+}

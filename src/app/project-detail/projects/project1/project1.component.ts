@@ -1,5 +1,6 @@
 import { Component, Input } from "@angular/core";
 import { IProject } from "src/app/interfaces/project";
+import { ICommand } from "../../command.interface";
 import { IProjectComponent } from "../../project.component";
 
 @Component({
@@ -12,9 +13,9 @@ export class Project1Component implements IProjectComponent {
 
   configs = `{
   "token": "BOT SECRET TOKEN",
-  "app_id": 0,
-  "dev_id": 0,
-  "guild_id": 0,
+  "app_id": 0, // The ID of the bot's application
+  "dev_id": 0, // The ID of the developer maintaining the bot
+  "guild_id": 0, // The ID of the server the bot is added to
   "command_prefix": "!",
   "case_insensitive": true,
   "spotify": {
@@ -79,4 +80,144 @@ export class Project1Component implements IProjectComponent {
     }
   }
 }`;
+
+  music_commands: ICommand[] = [
+    {
+      command: "join",
+      description: "Connects the bot to a VC",
+      example: "!join",
+    },
+    {
+      command: "leave",
+      description: "Disconnects the bot from a VC",
+      example: "!leave",
+    },
+    {
+      command: "now",
+      description: "Displays the currently playing song",
+      example: "!now",
+    },
+    {
+      command: "pause",
+      description: "Pauses the currently playing song",
+      example: "!pause",
+    },
+    {
+      command: "resume",
+      description: "Resumes the currently playing song",
+      example: "!resume",
+    },
+    {
+      command: "stop",
+      description: "Cancels the current song and clears the queue",
+      example: "!stop",
+    },
+    {
+      command: "skip",
+      description:
+        "Skips the current song (requires administrator permissions)",
+      example: "!skip",
+    },
+    {
+      command: "voteskip",
+      description: "Starts a vote to skip the current song",
+      example: "!voteskip",
+    },
+    {
+      command: "queue",
+      description: "Shows a page of queue",
+      example: "!queue <page=1>",
+    },
+    {
+      command: "shuffle",
+      description: "Shuffles the queue",
+      example: "!shuffle",
+    },
+    {
+      command: "remove",
+      description: "Removes a song at a given index",
+      example: "!remove <index>",
+    },
+    {
+      command: "loop",
+      description: "Toggles whether the current song should loop",
+      example: "!loop",
+    },
+    {
+      command: "loopqueue",
+      description: "Toggles whether the queue should loop",
+      example: "!loopqueue",
+    },
+    {
+      command: "play",
+      description: "Adds a song to the queue and joins a VC if necessary",
+      example: "!play <url | query>",
+    },
+    {
+      command: "move",
+      description: "Moves a song from an index to a new index",
+      example: "!move <index_from> <index_to>",
+    },
+  ];
+
+  dnd_commands: ICommand[] = [
+    {
+      command: "d4",
+      description: "Rolls some D4",
+      example: "!d4 <rolls=1>",
+    },
+    {
+      command: "d6",
+      description: "Rolls some D6",
+      example: "!d6 <rolls=1>",
+    },
+    {
+      command: "d8",
+      description: "Rolls some D8",
+      example: "!d8 <rolls=1>",
+    },
+    {
+      command: "d10",
+      description: "Rolls some D10",
+      example: "!d10 <rolls=1>",
+    },
+    {
+      command: "d12",
+      description: "Rolls some D12",
+      example: "!d12 <rolls=1>",
+    },
+    {
+      command: "d20",
+      description: "Rolls some D20",
+      example: "!d20 <rolls=1>",
+    },
+    {
+      command: "d100",
+      description: "Rolls some D100",
+      example: "!d100 <rolls=1>",
+    },
+    {
+      command: "rolladv",
+      description: "Rolls a dice with advantage",
+      example: "!rolladv <sides>",
+    },
+    {
+      command: "rolldis",
+      description: "Rolls a dice with disadvantage",
+      example: "!rolldis <sides>",
+    },
+  ];
+
+  misc_commands: ICommand[] = [
+    {
+      command: "hello",
+      description: "Sends a Hello, World! message",
+      example: "!hello",
+    },
+    {
+      command: "fact",
+      description: "Uses a third-party module to send a random fact",
+      example: "!fact",
+    },
+  ];
 }

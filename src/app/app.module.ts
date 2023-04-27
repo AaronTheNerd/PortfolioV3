@@ -47,6 +47,8 @@ import { Project16Component } from "./project-detail/projects/project16/project1
 import { Project17Component } from "./project-detail/projects/project17/project17.component";
 import { Project18Component } from "./project-detail/projects/project18/project18.component";
 import { Project19Component } from "./project-detail/projects/project19/project19.component";
+import { SubsubsectionHeadingComponent } from "./project-detail/subsubsection-heading/subsubsection-heading.component";
+import { CommandListComponent } from "./project-detail/command-list/command-list.component";
 
 @NgModule({
   declarations: [
@@ -84,6 +86,8 @@ import { Project19Component } from "./project-detail/projects/project19/project1
     Project17Component,
     Project18Component,
     Project19Component,
+    SubsubsectionHeadingComponent,
+    CommandListComponent,
   ],
   imports: [
     BrowserModule,
