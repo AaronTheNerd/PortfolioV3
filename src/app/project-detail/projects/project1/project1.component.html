@@ -21,13 +21,20 @@
     Discord's API utilizes cogs to group and categorize the different commands.
     These are the cogs which my Discord bot has.
   </p>
-  <app-subsubsection-heading title="Music"></app-subsubsection-heading>
+
+  <app-subsubsection-heading
+    id="music"
+    title="Music Cog"></app-subsubsection-heading>
   <app-command-list [commands]="music_commands"></app-command-list>
 
-  <app-subsubsection-heading title="DnD"></app-subsubsection-heading>
+  <app-subsubsection-heading
+    id="dnd"
+    title="DnD Cog"></app-subsubsection-heading>
   <app-command-list [commands]="dnd_commands"></app-command-list>
 
-  <app-subsubsection-heading title="Misc"></app-subsubsection-heading>
+  <app-subsubsection-heading
+    id="misc"
+    title="Misc Cog"></app-subsubsection-heading>
   <app-command-list [commands]="misc_commands"></app-command-list>
 
   <app-subsection-heading id="events" title="Events"></app-subsection-heading>
@@ -35,6 +42,18 @@
   <app-section-heading
     id="specs"
     title="Technical Specifications"></app-section-heading>
+
+  <app-subsection-heading
+    id="discordpy2"
+    title="Discord.py 2.0"></app-subsection-heading>
+
+  <app-subsection-heading
+    id="lazy-loading"
+    title="Lazy Loading"></app-subsection-heading>
+
+  <app-subsection-heading
+    id="spotify"
+    title="Spotify Support"></app-subsection-heading>
 
   <app-section-heading id="credits" title="Credits"></app-section-heading>
 </div>

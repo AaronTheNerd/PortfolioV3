@@ -38,7 +38,7 @@ export class Project1Component implements IProjectComponent {
       },
       "role_on_join": {
         "enabled": true,
-        "role_id": 0
+        "role_id": 0 // The ID of the role that the user should be assigned
       },
       "random_insult_on_command": {
         "enabled": true,
@@ -60,7 +60,7 @@ export class Project1Component implements IProjectComponent {
       "enabled": true,
       "binding": {
         "enabled": true,
-        "channel_id": 0
+        "channel_id": 0 // The ID of the text channel the commands from this cog must be called from
       },
       "voteskip": {
         "exclude_idle": false,
