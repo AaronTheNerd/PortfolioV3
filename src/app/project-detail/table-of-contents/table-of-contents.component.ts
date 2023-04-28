@@ -32,6 +32,7 @@ export class TableOfContentsComponent implements OnInit {
       const section = {
         id: value.id,
         title: value.getAttribute("title")!,
+        collapsed: false,
         subsections: [],
       };
       switch (value.tagName) {
