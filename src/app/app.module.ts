@@ -12,6 +12,7 @@ import { SideNavbarComponent } from "./side-navbar/side-navbar.component";
 import { WorkComponent } from "./work/work.component";
 import { MatIconModule } from "@angular/material/icon";
 import { MatCheckboxModule } from "@angular/material/checkbox";
+import { MatCardModule } from "@angular/material/card";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
@@ -49,6 +50,7 @@ import { Project18Component } from "./project-detail/projects/project18/project1
 import { Project19Component } from "./project-detail/projects/project19/project19.component";
 import { SubsubsectionHeadingComponent } from "./project-detail/subsubsection-heading/subsubsection-heading.component";
 import { CommandListComponent } from "./project-detail/command-list/command-list.component";
+import { GithubCardComponent } from "./project-detail/github-card/github-card.component";
 
 @NgModule({
   declarations: [
@@ -88,6 +90,7 @@ import { CommandListComponent } from "./project-detail/command-list/command-list
     Project19Component,
     SubsubsectionHeadingComponent,
     CommandListComponent,
+    GithubCardComponent,
   ],
   imports: [
     BrowserModule,
@@ -99,6 +102,7 @@ import { CommandListComponent } from "./project-detail/command-list/command-list
     NgbModule,
     HttpClientModule,
     HighlightModule,
+    MatCardModule,
   ],
   providers: [
     {
