@@ -1,4 +1,5 @@
 <div>
+  <!--Documentation Section Start-->
   <app-section-heading id="docs" title="Documentation"></app-section-heading>
 
   <app-subsection-heading
@@ -38,20 +39,62 @@
   <app-command-list [commands]="misc_commands"></app-command-list>
 
   <app-subsection-heading id="events" title="Events"></app-subsection-heading>
+  <!--Documentation Section End-->
 
+  <!--Specifications Section Start-->
   <app-section-heading id="specs" title="Specifications"></app-section-heading>
 
   <app-subsection-heading
     id="discordpy2"
-    title="Discord.py 2.0"></app-subsection-heading>
+    title="Discord.py v2.0"></app-subsection-heading>
+
+  <p>
+    Initially, I used bot commands in discord.py v1.0 to implement the commands.
+    However, with the release of discord.py v2.0, I decided to begin migrating
+    to use application commands. Application commands offer several benefits,
+    including increased stability and better integration with the Discord API.
+    However, the migration process is still in progress as I have not yet
+    migrated the Music cog.
+  </p>
 
   <app-subsection-heading
+    id="hosting"
+    title="EC2 Hosting"></app-subsection-heading>
+
+  <p>
+    My discord bot is being hosted on a micro EC2 instance on AWS. This allows
+    me to keep the bot running 24/7 without needing to keep my own computer
+    running. However, there were some challenges involved in setting up and
+    maintaining the instance, such as ensuring the server had enough resources
+    to handle to bot's tasks and managing server costs.
+  </p>
+
+  <app-subsubsection-heading
     id="lazy-loading"
-    title="Lazy Loading"></app-subsection-heading>
+    title="Lazy Loading"></app-subsubsection-heading>
+
+  <p>
+    One notable issue with running the bot on such a small server was storage
+    capacity. Essentially, whenever a user would attempt to load a playlist with
+    over ~20 songs in it, youtubeDL would need to download all of those songs
+    before they could be added to the queue. At best, this would cause the bot
+    to timeout and leave the VC, at worst this would cause the server to run out
+    of available memory and crash.
+  </p>
+  <p>
+    My solution to this was to implement a form of lazy loading. This involved
+    storing the songs in the queue as coroutines which could later be run to
+    download the source of the audio. This allowed the bot to queue up playlists
+    of 100s of songs while only using the memory it absolutely needed when
+    running.
+  </p>
 
   <app-subsection-heading
-    id="spotify"
-    title="Spotify Support"></app-subsection-heading>
+    id="url"
+    title="URL Conversion"></app-subsection-heading>
+  <!--Specifications Section End-->
 
+  <!--Credits Section Start-->
   <app-section-heading id="credits" title="Credits"></app-section-heading>
+  <!--Credits Section End-->
 </div>
