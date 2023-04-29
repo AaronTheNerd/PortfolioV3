@@ -10,13 +10,10 @@ import { ISection } from "src/app/interfaces/section";
 export class TableOfContentsComponent implements OnInit {
   sections: ISection[] = [];
 
-  constructor(public scroller: ViewportScroller) {
-    console.log("generating TOC");
-  }
+  constructor(public scroller: ViewportScroller) {}
 
   ngOnInit(): void {
     this.getSections();
-    console.log("generating TOC");
   }
 
   getSections(): void {
