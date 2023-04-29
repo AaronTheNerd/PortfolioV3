@@ -9,7 +9,7 @@
   -o-transition: max-height 1s;
   transition: max-height 1s;
   max-height: 20vh;
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 .overlay {
