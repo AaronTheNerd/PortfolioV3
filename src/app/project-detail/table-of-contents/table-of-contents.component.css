@@ -1,10 +1,15 @@
+#toc-main {
+  border: 1px solid #dee2e640;
+}
+
+h1 {
+  margin-bottom: 8px;
+}
+
 ul {
   list-style-type: none;
-  position: sticky;
-  top: 0;
   padding-left: 30px;
-  overflow: hidden;
-  width: fit-content;
+  margin-bottom: 0px;
 }
 
 .link:hover {

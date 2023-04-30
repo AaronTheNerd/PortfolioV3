@@ -1,14 +1,18 @@
-<div class="row project-content">
-  <div class="col-sm-auto">
-    <app-table-of-contents></app-table-of-contents>
-  </div>
-  <div class="col project-page">
+<div class="project-content">
+  <div class="project-page">
     <p id="top" class="display-5 mb-0" [innerText]="project.title"></p>
     <hr class="hr mt-0" />
-    <app-github-card
-      *ngIf="project.gitLink"
-      [link]="project.gitLink"></app-github-card>
-    <p [innerText]="project.description"></p>
+    <div class="row">
+      <div class="col">
+        <app-github-card
+          *ngIf="project.gitLink"
+          [link]="project.gitLink"></app-github-card>
+        <p [innerText]="project.description"></p>
+      </div>
+      <div class="col-md-auto">
+        <app-table-of-contents></app-table-of-contents>
+      </div>
+    </div>
     <div id="project-detail">
       <ng-template appProjectDetail [project]="project"></ng-template>
     </div>
