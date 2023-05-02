@@ -51,6 +51,7 @@ import { Project19Component } from "./project-detail/projects/project19/project1
 import { SubsubsectionHeadingComponent } from "./project-detail/subsubsection-heading/subsubsection-heading.component";
 import { CommandListComponent } from "./project-detail/command-list/command-list.component";
 import { GithubCardComponent } from "./project-detail/github-card/github-card.component";
+import { WordSearchComponent } from "./about/word-search/word-search.component";
 
 @NgModule({
   declarations: [
@@ -91,6 +92,7 @@ import { GithubCardComponent } from "./project-detail/github-card/github-card.co
     SubsubsectionHeadingComponent,
     CommandListComponent,
     GithubCardComponent,
+    WordSearchComponent,
   ],
   imports: [
     BrowserModule,

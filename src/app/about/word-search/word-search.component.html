@@ -1,0 +1,29 @@
+<div>
+  <div
+    *ngFor="let line of puzzle; let y = index"
+    style="height: {{ lineHeight }}px">
+    <span
+      *ngFor="let char of line; let x = index"
+      id="char-{{ x }}-{{ y }}"
+      class="bg-white text-black text-center align-baseline border user-select-none"
+      [ngStyle]="{ width: lineHeight + 'px', height: lineHeight + 'px' }"
+      [innerText]="char">
+    </span>
+    <span
+      *ngFor="let char of line; let x = index"
+      id="target-{{ x }}-{{ y }}"
+      class="tall user-select-none"
+      [ngStyle]="getStyle(getEl({ x: x, y: y })!)"
+      (mousedown)="startDrag(x, y)"
+      (mouseup)="endDrag(x, y)"
+      (mouseover)="enterDrag(x, y)">
+    </span>
+  </div>
+</div>
+
+<div id="highlights"></div>
+
+<div
+  id="current-highlight"
+  class="highlight d-none"
+  [ngStyle]="drawLine()"></div>

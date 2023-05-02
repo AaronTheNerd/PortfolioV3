@@ -1,0 +1,13 @@
+span {
+  display: inline-block;
+}
+
+.tall {
+  position: absolute;
+  z-index: 50;
+  cursor: crosshair;
+}
+
+.highlight {
+  z-index: 25;
+}
