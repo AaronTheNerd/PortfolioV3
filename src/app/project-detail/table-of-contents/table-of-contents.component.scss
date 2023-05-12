@@ -1,5 +1,7 @@
+@import "../../../assets/styles/variables.scss";
+
 #toc-main {
-  border: 1px solid #dee2e640;
+  border-left: 5px solid $accent;
 }
 
 h1 {

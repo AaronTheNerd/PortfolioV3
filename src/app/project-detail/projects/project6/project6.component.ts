@@ -3,6 +3,6 @@ import { Component } from "@angular/core";
 @Component({
   selector: "app-project6",
   templateUrl: "./project6.component.html",
-  styleUrls: ["./project6.component.css"],
+  styleUrls: ["./project6.component.scss"],
 })
 export class Project6Component {}

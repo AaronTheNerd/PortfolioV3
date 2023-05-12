@@ -18,7 +18,7 @@ OneDark-Pro-Darker theme taken from the vivid section of: https://camo.githubuse
 .hljs-literal,
 .hljs-section,
 .hljs-link {
-  color: #d19a66;
+  color: rgb(209, 154, 102);
 }
 
 .hljs-subst {
@@ -26,11 +26,11 @@ OneDark-Pro-Darker theme taken from the vivid section of: https://camo.githubuse
 }
 
 .hljs-string {
-  color: #ef596f;
+  color: rgb(239, 89, 111);
 }
 
 .hljs-ln-line :nth-child(2).hljs-string {
-  color: #89ca78;
+  color: rgb(137, 202, 120);
 }
 .hljs-title,
 .hljs-name,

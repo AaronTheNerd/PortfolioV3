@@ -4,7 +4,7 @@ import { animate, style, transition, trigger } from "@angular/animations";
 @Component({
   selector: "app-image-carousel",
   templateUrl: "./image-carousel.component.html",
-  styleUrls: ["./image-carousel.component.css"],
+  styleUrls: ["./image-carousel.component.scss"],
   animations: [
     trigger("fade", [
       transition("false=>true", [

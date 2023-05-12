@@ -1,4 +1,4 @@
-<div class="py-5 projects-content">
+<div class="projects-content">
   <p class="display-4">Projects</p>
   <hr class="hr" />
 
@@ -38,7 +38,7 @@
     [(ngbCollapse)]="filterSortService.isCollapsed"
     id="filter-div"
     class="px-3 py-0">
-    <div class="row p-2 bg-white rounded">
+    <div class="row p-2 bg-light rounded">
       <div class="col-auto border-end px-3">
         <ul class="bg-light">
           <li
@@ -78,11 +78,13 @@
   </div>
 
   <hr class="hr" />
-  <div class="bg-light text-black rounded">
+  <div class="bg-light text-black">
     <div
       *ngFor="let proj of projects$ | async; let index = index"
       [routerLink]="['/projects', proj.id]"
-      class="project-row row m-0 p-3 {{ index ? 'border-top' : '' }}">
+      class="project-row row m-0 p-3 {{ index ? 'border-top' : '' }} {{
+        proj.favorite ? 'favorite-project' : ''
+      }}">
       <div class="col ps-0 my-auto">
         <h1>
           {{ proj.title }}&nbsp;

@@ -6,7 +6,7 @@ const theme = "assets/styles/oneDarkProDarker.css";
 @Component({
   selector: "app-code-snippet",
   templateUrl: "./code-snippet.component.html",
-  styleUrls: ["./code-snippet.component.css"],
+  styleUrls: ["./code-snippet.component.scss"],
 })
 export class CodeSnippetComponent {
   @Input() title = "";

@@ -11,7 +11,7 @@ import { Observable, switchMap, of, filter } from "rxjs";
 @Component({
   selector: "app-side-navbar",
   templateUrl: "./side-navbar.component.html",
-  styleUrls: ["./side-navbar.component.css"],
+  styleUrls: ["./side-navbar.component.scss"],
 })
 export class SideNavbarComponent {
   routes: INavbarItem[] = NAV_ITEMS;

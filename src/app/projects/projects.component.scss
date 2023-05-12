@@ -1,5 +1,14 @@
+@import "../../assets/styles/variables.scss";
+
 .projects-content {
-  padding: 0 10vw;
+  max-width: $article-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding: $article-padding;
+}
+
+.favorite-project {
+  border-left: 10px solid $accent;
 }
 
 #filter-div {
@@ -21,12 +30,4 @@
 .project-row:hover {
   background-color: var(--bs-gray-300);
   cursor: pointer;
-}
-
-.project-row:hover:nth-of-type(1) {
-  border-radius: var(--bs-border-radius) var(--bs-border-radius) 0 0;
-}
-
-.project-row:hover:last-of-type {
-  border-radius: 0 0 var(--bs-border-radius) var(--bs-border-radius);
 }

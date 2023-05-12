@@ -5,7 +5,7 @@
     <span
       *ngFor="let char of line; let x = index"
       id="char-{{ x }}-{{ y }}"
-      class="bg-white text-black text-center align-baseline border user-select-none"
+      class="h6 bg-light text-black text-center align-baseline border user-select-none"
       [ngStyle]="{ width: lineHeight + 'px', height: lineHeight + 'px' }"
       [innerText]="char">
     </span>
@@ -19,11 +19,25 @@
       (mouseover)="enterDrag(x, y)">
     </span>
   </div>
+  <div>
+    <div
+      *ngFor="let word of answers"
+      [ngClass]="word.found ? 'text-primary' : 'text-light'"
+      [innerText]="word.answer"></div>
+  </div>
 </div>
 
-<div id="highlights"></div>
+<div id="highlights">
+  <div
+    *ngFor="let word of answers"
+    class="highlight"
+    [ngStyle]="
+      word.found ? drawLine(word.start, word.end) : { display: 'none' }
+    "
+    [ngClass]="word.egg ? 'easter-egg' : null"></div>
+</div>
 
 <div
   id="current-highlight"
   class="highlight d-none"
-  [ngStyle]="drawLine()"></div>
+  [ngStyle]="drawLine(start, end)"></div>

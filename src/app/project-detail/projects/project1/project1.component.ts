@@ -6,7 +6,7 @@ import { IProjectComponent } from "../../project.component";
 @Component({
   selector: "app-project1",
   templateUrl: "./project1.component.html",
-  styleUrls: ["./project1.component.css"],
+  styleUrls: ["./project1.component.scss"],
 })
 export class Project1Component implements IProjectComponent {
   @Input() project?: IProject = undefined;
