@@ -8,6 +8,13 @@ $theme-colors: (
   "light": $light,
 );
 
+.article-content {
+  max-width: $article-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding: $article-padding;
+}
+
 @import "node_modules/bootstrap/scss/bootstrap";
 
 /* You can add global styles to this file, and also import other style files */

@@ -1,14 +1,7 @@
 @import "../../assets/styles/variables.scss";
 
-.projects-content {
-  max-width: $article-width;
-  margin-left: auto;
-  margin-right: auto;
-  padding: $article-padding;
-}
-
 .favorite-project {
-  border-left: 10px solid $accent;
+  border-left: 15px solid $accent;
 }
 
 #filter-div {
