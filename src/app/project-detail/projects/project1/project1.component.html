@@ -96,38 +96,41 @@
   <app-subsection-heading
     id="url"
     title="URL Conversion"></app-subsection-heading>
-
-  <p>
-    Originally the bot's <code>!play</code> command only supported search
-    queries and standard YouTube video URLs. However, once I had implemented the
-    ability to load YouTube playlists, some users would attempt to load their
-    Spotify playlists into the bot. This would typically result in the bot
-    crashing as youtubeDL could not properly parse the response from non-YouTube
-    URLs.
-  </p>
-  <p>
-    To account for this, I began detecting when someone would use a Spotify URL
-    and, using the Spotify API, I would convert the URL into a search query of
-    the form: "&lt;Title> by &lt;Artist> lyrics". This search query would be
-    properly handled by YoutubeDL most of the time (less popular artists, short
-    titles, and non-descript names can result in the wrong video playing but it
-    is fairly uncommon).
-  </p>
-  <p>
-    Additionally, I noticed that my approach to detecting and handling these URL
-    conversions could be expanded to allow for using some less traditional, but
-    still valid, YouTube URLs. These include URLs for YouTube playlists and
-    shorts. Currently, the bot supports search queries and URLs of these forms:
-  </p>
-  <ul>
-    <li>youtube.com/watch?v=&lt;id></li>
-    <li>youtube.com/shorts/&lt;id></li>
-    <li>youtube.com/playlist?list=&lt;id></li>
-    <li>youtu.be/&lt;id></li>
-    <li>open.spotify.com/track/&lt;id></li>
-    <li>open.spotify.com/playlist/&lt;id></li>
-    <li>open.spotify.com/album/&lt;id></li>
-  </ul>
+  <app-figure-wrapper>
+    <app-figure title="All URL patterns that can be used with the bot.">
+      <ul>
+        <li>youtube.com/watch?v=&lt;id></li>
+        <li>youtube.com/shorts/&lt;id></li>
+        <li>youtube.com/playlist?list=&lt;id></li>
+        <li>youtu.be/&lt;id></li>
+        <li>open.spotify.com/track/&lt;id></li>
+        <li>open.spotify.com/playlist/&lt;id></li>
+        <li>open.spotify.com/album/&lt;id></li>
+      </ul>
+    </app-figure>
+    <p>
+      Originally the bot's <code>!play</code> command only supported search
+      queries and standard YouTube video URLs. However, once I had implemented
+      the ability to load YouTube playlists, some users would attempt to load
+      their Spotify playlists into the bot. This would typically result in the
+      bot crashing as youtubeDL could not properly parse the response from
+      non-YouTube URLs.
+    </p>
+    <p>
+      To account for this, I began detecting when someone would use a Spotify
+      URL and, using the Spotify API, I would convert the URL into a search
+      query of the form: "&lt;Title> by &lt;Artist> lyrics". This search query
+      would be properly handled by YoutubeDL most of the time (less popular
+      artists, short titles, and non-descript names can result in the wrong
+      video playing but it is fairly uncommon).
+    </p>
+    <p>
+      Additionally, I noticed that my approach to detecting and handling these
+      URL conversions could be expanded to allow for using some less
+      traditional, but still valid, YouTube URLs. These include URLs for YouTube
+      playlists and shorts.
+    </p>
+  </app-figure-wrapper>
   <!--Specifications Section End-->
 
   <!--Credits Section Start-->

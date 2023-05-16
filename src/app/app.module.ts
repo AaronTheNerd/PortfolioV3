@@ -52,6 +52,8 @@ import { SubsubsectionHeadingComponent } from "./project-detail/subsubsection-he
 import { CommandListComponent } from "./project-detail/command-list/command-list.component";
 import { GithubCardComponent } from "./project-detail/github-card/github-card.component";
 import { WordSearchComponent } from "./about/word-search/word-search.component";
+import { FigureComponent } from "./project-detail/figure/figure.component";
+import { FigureWrapperComponent } from "./project-detail/figure-wrapper/figure-wrapper.component";
 
 @NgModule({
   declarations: [
@@ -93,6 +95,8 @@ import { WordSearchComponent } from "./about/word-search/word-search.component";
     CommandListComponent,
     GithubCardComponent,
     WordSearchComponent,
+    FigureComponent,
+    FigureWrapperComponent,
   ],
   imports: [
     BrowserModule,
