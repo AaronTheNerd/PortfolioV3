@@ -1,4 +1,11 @@
-tbody tr:last-child {
+@import "../../../assets/styles/variables.scss";
+
+thead th {
+  background-color: $darker;
+}
+
+th,
+td {
   border-style: none;
   border: none;
 }
