@@ -1,28 +1,32 @@
-<div>
-  <div
-    *ngFor="let line of puzzle; let y = index"
-    style="height: {{ lineHeight }}px">
-    <span
-      *ngFor="let char of line; let x = index"
-      id="char-{{ x }}-{{ y }}"
-      class="h6 bg-light text-black text-center align-baseline border user-select-none"
-      [ngStyle]="{ width: lineHeight + 'px', height: lineHeight + 'px' }"
-      [innerText]="char">
-    </span>
-    <span
-      *ngFor="let char of line; let x = index"
-      id="target-{{ x }}-{{ y }}"
-      class="tall user-select-none"
-      [ngStyle]="getStyle(getEl({ x: x, y: y })!)"
-      (mousedown)="startDrag(x, y)"
-      (mouseup)="endDrag(x, y)"
-      (mouseover)="enterDrag(x, y)">
-    </span>
-  </div>
-  <div>
+<h1>The <span class="text-accent">I am...</span> Word Search</h1>
+<div class="row word-search-wrapper">
+  <div class="col-auto px-0">
     <div
-      *ngFor="let word of answers"
-      [ngClass]="word.found ? 'text-primary' : 'text-light'"
+      *ngFor="let line of puzzle; let y = index"
+      style="height: {{ lineHeight }}px">
+      <span
+        *ngFor="let char of line; let x = index"
+        id="char-{{ x }}-{{ y }}"
+        class="h6 bg-light text-black text-center align-baseline border user-select-none"
+        [ngStyle]="{ width: lineHeight + 'px', height: lineHeight + 'px' }"
+        [innerText]="char">
+      </span>
+      <span
+        *ngFor="let char of line; let x = index"
+        id="target-{{ x }}-{{ y }}"
+        class="tall user-select-none"
+        [ngStyle]="getStyle(getEl({ x: x, y: y })!)"
+        (mousedown)="startDrag(x, y)"
+        (mouseup)="endDrag(x, y)"
+        (mouseover)="enterDrag(x, y)">
+      </span>
+    </div>
+  </div>
+  <div id="word-bank" class="col-auto">
+    <div
+      *ngFor="let word of displayBank()"
+      class="word-bank-word"
+      [ngClass]="word.found ? 'text-decoration-line-through' : ''"
       [innerText]="word.answer"></div>
   </div>
 </div>
