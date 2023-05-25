@@ -4,7 +4,7 @@
     <hr class="hr mt-0" />
     <div class="row">
       <div class="col">
-        <p [innerText]="project.description"></p>
+        <p [innerHTML]="project.description"></p>
         <br />
         <app-github-card
           *ngIf="project.gitLink"
