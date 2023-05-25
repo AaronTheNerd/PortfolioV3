@@ -1,7 +1,12 @@
 @import "../../../assets/styles/variables.scss";
 
+table {
+  border: 2px solid $primary;
+}
+
 thead th {
-  background-color: $darker;
+  padding: 1em 0.5em;
+  background-color: $primary;
 }
 
 th,
