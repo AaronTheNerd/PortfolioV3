@@ -2,13 +2,35 @@
   <!--Documentation Section Start-->
   <app-section-heading id="specs" title="Specifications"></app-section-heading>
 
+  <p>
+    Welcome to the Specifications section of my Discord bot! Here, you will
+    discover the various capabilities and functionalities that make interacting
+    with the bot a seamless and customizable experience. From configuring the
+    bot's behavior through a user-friendly JSON file to utilizing a wide range
+    of commands and events, this section will provide you with an in-depth
+    understanding of the bot's features. Whether you're looking to host virtual
+    DnD sessions, listen to music with friends, or add a touch of entertainment,
+    my Discord bot offers a versatile set of tools designed to cater to your
+    specific needs.
+  </p>
+
   <app-subsection-heading
     id="configs"
     title="Configuration"></app-subsection-heading>
+
   <p>
-    The bot is easily configurable through a JSON file located in the root of
-    the repository.
+    With the aim of providing a user-friendly method of customizing my Discord
+    bot, I have offered a simple yet powerful configuration system. By
+    leveraging the flexibility of JSON, users can easily modify and fine-tune
+    the bot's behavior to suit their specific preferences. The JSON
+    configuration file acts as a central hub where various settings, such as
+    default prefixes, default roles for new users, which cogs are active, and
+    more, can be adjusted effortlessly. This intuitive approach to configuration
+    ensures that users have full control over how the bot interacts within their
+    server, allowing for a tailored and personalized experience that aligns
+    perfectly with their needs.
   </p>
+
   <app-code-snippet
     title="Example configs.json"
     [content]="configs"
@@ -18,9 +40,17 @@
   <app-subsection-heading
     id="commands"
     title="Commands"></app-subsection-heading>
+
   <p>
-    Discord's API utilizes cogs to group and categorize the different commands.
-    These are the cogs which my Discord bot has.
+    To enhance the modularity and organization of my Discord bot, I have
+    implemented a system of cogs. Cogs serve as self-contained modules that
+    encapsulate specific sets of commands and functionalities, allowing for a
+    more structured and manageable bot design. By separating functionalities
+    into cogs, it becomes easier to add, remove, or modify specific features
+    without affecting the overall structure. This modular approach provides
+    flexibility and maintainability, ensuring that my Discord bot remains
+    adaptable to changing requirements and can easily accommodate new features
+    in the future.
   </p>
 
   <app-subsubsection-heading
@@ -74,7 +104,6 @@
     which brings a touch of levity to the server environment, making
     interactions more enjoyable for everyone involved.
   </p>
-
   <!--Documentation Section End-->
 
   <!--Specifications Section Start-->
@@ -99,6 +128,7 @@
     should interact with the Discord API. Essentially, I had two primary
     choices: <code>discord.py</code> or <code>discord.js</code>.
   </p>
+
   <p>
     While I acknowledge the advantages of asynchronous programming in
     JavaScript, I made the deliberate choice to leverage my existing knowledge
@@ -134,7 +164,7 @@
 
   <app-subsection-heading
     id="server"
-    title="Running on a Server"></app-subsection-heading>
+    title="Running 24/7"></app-subsection-heading>
 
   <p>
     One of the design challenges I encountered while developing my Discord bot
@@ -175,6 +205,7 @@
     cause the bot to timeout and leave the VC, at worst this would cause the
     server to run out of available memory and crash.
   </p>
+
   <p>
     My solution to this was to implement a form of lazy loading. This involved
     storing the songs in the queue as coroutines which could later be run to
@@ -189,6 +220,7 @@
   <app-subsection-heading
     id="url"
     title="URL Conversion"></app-subsection-heading>
+
   <app-figure-wrapper>
     <app-figure title="All URL patterns that can be used with the bot.">
       <ul>
@@ -201,6 +233,7 @@
         <li>open.spotify.com/album/&lt;id></li>
       </ul>
     </app-figure>
+
     <p>
       Originally the bot's <code>!play</code> command only supported search
       queries and standard YouTube video URLs. However, once I had implemented
@@ -209,6 +242,7 @@
       bot crashing as <code>youtubeDL</code> could not properly parse the
       response from non-YouTube URLs.
     </p>
+
     <p>
       To account for this, I began detecting when someone would use a Spotify
       URL and, using the Spotify API, I would convert the URL into a search
@@ -217,6 +251,7 @@
       popular artists, short titles, and non-descript names can result in the
       wrong video playing but it is fairly uncommon).
     </p>
+
     <p>
       Additionally, I noticed that my approach to detecting and handling these
       URL conversions could be expanded to allow for using some less
