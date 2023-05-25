@@ -25,7 +25,7 @@ export const PROJECTS: IProject[] = [
     title: "Discord Bot",
     school: false,
     languages: [Language.py],
-    description: `A Discord bot written in Python which utilizes the discord.py library to play music and assist in virtual D&D sessions in my friend's Discord server. The bot utilizes the youtubeDL library to search and download music from YouTube, which is then played through a voice channel in the server. In addition to music playback, the bot has commands for rolling dice, which can be used to simulate actions and combat in D&D sessions. The bot can roll various types of dice with customizable modifiers and provide the results in the chat. Through this project, I gained experience in integrating APIs, programming with Python, and developing a customized bot for multiple use cases as requested by users.`,
+    description: `A Discord bot written in Python which utilizes the <code>discord.py</code> library to play music and assist in virtual D&D sessions in my friend's Discord server. The bot utilizes the <code>youtubeDL</code> library to search and download music from YouTube, which is then played through a voice channel in the server. In addition to music playback, the bot has commands for rolling dice, which can be used to simulate actions and combat in D&D sessions. The bot can roll various types of dice with support for rolling with advantage or disadvantage. Through this project, I gained experience in integrating APIs, programming with Python, and developing a customized bot for multiple use cases as requested by users.`,
     component: Project1Component,
     tags: [
       "Discord.py",
