@@ -17,6 +17,7 @@ import { Project5Component } from "../project-detail/projects/project5/project5.
 import { Project6Component } from "../project-detail/projects/project6/project6.component";
 import { Project7Component } from "../project-detail/projects/project7/project7.component";
 import { Project9Component } from "../project-detail/projects/project9/project9.component";
+import { Project20Component } from "../project-detail/projects/project20/project20.component";
 import { Language } from "./languages";
 
 export const PROJECTS: IProject[] = [
@@ -290,4 +291,32 @@ export const PROJECTS: IProject[] = [
     modified: new Date("2018-04-08"),
     thumbnails: [],
   },
+  {
+    id: 20,
+    title: "Ellipse Perimeter Approximation",
+    school: false,
+    languages: [Language.cpp, Language.py],
+    description: `A program I designed that aims to generate approximate formulas for the perimeter of an ellipse using a brute-force approach. Initially prototyped in Python, the program has been further developed and optimized in C++ for enhanced performance. By recursively generating stack-based calculators and comparing the results to the known perimeters of ellipses with various dimensions, the program seeks to find the closest approximation for the perimeter of an ellipse. This process involves extensive calculations and rigorous analysis to identify the most accurate formula. By rewriting the program in C++, I have achieved improved efficiency and speed, allowing for far faster computations.`,
+    component: Project20Component,
+    tags: ["Multithreading"],
+    created: new Date("2022-10-28"),
+    modified: new Date("202-12-29"),
+    gitLink: "https://github.com/AaronTheNerd/EllipseApprox",
+    thumbnails: ["assets/thumbnails/ellipse-comparison.png"],
+  },
 ];
+
+/*
+{
+    id: 20,
+    title: "",
+    school: false,
+    languages: [],
+    description: ``,
+    component: Project10Component,
+    tags: [],
+    created: new Date(),
+    modified: new Date(),
+    thumbnails: [],
+  },
+*/

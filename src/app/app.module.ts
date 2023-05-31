@@ -54,6 +54,7 @@ import { GithubCardComponent } from "./project-detail/github-card/github-card.co
 import { WordSearchComponent } from "./about/word-search/word-search.component";
 import { FigureComponent } from "./project-detail/figure/figure.component";
 import { FigureWrapperComponent } from "./project-detail/figure-wrapper/figure-wrapper.component";
+import { Project20Component } from "./project-detail/projects/project20/project20.component";
 
 @NgModule({
   declarations: [
@@ -97,6 +98,7 @@ import { FigureWrapperComponent } from "./project-detail/figure-wrapper/figure-w
     WordSearchComponent,
     FigureComponent,
     FigureWrapperComponent,
+    Project20Component,
   ],
   imports: [
     BrowserModule,
