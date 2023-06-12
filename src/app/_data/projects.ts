@@ -123,7 +123,7 @@ export const PROJECTS: IProject[] = [
     languages: [Language.py],
     description: `A Python-based web scraping tool that allows users to retrieve the top-rated 250 movies from IMDb. The scraper utilizes popular Python libraries such as Selenium, BeautifulSoup, and Pandas to automate the process of extracting movie data from IMDb's website and exporting it to a spreadsheet for further use.`,
     component: Project7Component,
-    tags: ["Webscraping", "Pandas", "BeutifulSoup", "Selenium"],
+    tags: ["Webscraping", "Pandas", "BeautifulSoup", "Selenium"],
     created: new Date("2020-03-01"),
     modified: new Date("2020-03-30"),
     gitLink:
