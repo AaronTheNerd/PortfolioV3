@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 
 interface IPosition {
   x: number;
@@ -18,7 +18,7 @@ interface IAnswer {
   templateUrl: "./word-search.component.html",
   styleUrls: ["./word-search.component.scss"],
 })
-export class WordSearchComponent {
+export class WordSearchComponent implements OnInit {
   puzzle: string[][] = [
     [
       "B",
@@ -747,6 +747,13 @@ export class WordSearchComponent {
   highlightHeight = 15;
   dragging = false;
 
+  ngOnInit() {
+    console.log("Easter Egg Words:");
+    this.answers.forEach((ans) => {
+      if (ans.egg) console.log(ans.answer);
+    });
+  }
+
   getOffset(el: HTMLElement) {
     const rect = el.getBoundingClientRect();
     return {
@@ -861,7 +868,6 @@ export class WordSearchComponent {
     if (this.dragging) return;
     this.dragging = true;
     this.hideLine();
-    console.log("Start");
     this.start = {
       x: x,
       y: y,
@@ -870,7 +876,6 @@ export class WordSearchComponent {
 
   endDrag(x: number, y: number) {
     this.dragging = false;
-    console.log("End");
     this.end = {
       x: x,
       y: y,
@@ -880,13 +885,11 @@ export class WordSearchComponent {
       this.hideLine();
       return;
     }
-    console.log("Found " + answer.answer);
     this.hideLine();
   }
 
   enterDrag(x: number, y: number) {
     if (!this.dragging) return;
-    console.log("Enter");
     this.end = {
       x: x,
       y: y,
