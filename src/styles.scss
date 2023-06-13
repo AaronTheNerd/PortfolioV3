@@ -19,6 +19,11 @@ $theme-colors: (
 
 /* You can add global styles to this file, and also import other style files */
 
+.row {
+  margin: 0;
+  padding: 0;
+}
+
 html,
 body {
   height: 100%;
