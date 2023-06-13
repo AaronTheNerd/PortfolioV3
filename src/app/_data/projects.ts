@@ -1,20 +1,14 @@
 import { IProject } from "../interfaces/project";
 import { Project1Component } from "../project-detail/projects/project1/project1.component";
 import { Project10Component } from "../project-detail/projects/project10/project10.component";
-import { Project11Component } from "../project-detail/projects/project11/project11.component";
 import { Project12Component } from "../project-detail/projects/project12/project12.component";
 import { Project13Component } from "../project-detail/projects/project13/project13.component";
 import { Project14Component } from "../project-detail/projects/project14/project14.component";
-import { Project15Component } from "../project-detail/projects/project15/project15.component";
-import { Project16Component } from "../project-detail/projects/project16/project16.component";
-import { Project17Component } from "../project-detail/projects/project17/project17.component";
 import { Project18Component } from "../project-detail/projects/project18/project18.component";
-import { Project19Component } from "../project-detail/projects/project19/project19.component";
 import { Project2Component } from "../project-detail/projects/project2/project2.component";
 import { Project3Component } from "../project-detail/projects/project3/project3.component";
 import { Project4Component } from "../project-detail/projects/project4/project4.component";
 import { Project5Component } from "../project-detail/projects/project5/project5.component";
-import { Project6Component } from "../project-detail/projects/project6/project6.component";
 import { Project7Component } from "../project-detail/projects/project7/project7.component";
 import { Project9Component } from "../project-detail/projects/project9/project9.component";
 import { Project20Component } from "../project-detail/projects/project20/project20.component";
@@ -104,19 +98,6 @@ export const PROJECTS: IProject[] = [
     thumbnails: ["assets/thumbnails/christmas.jpg"],
   },
   {
-    id: 6,
-    title: "High Precision Integer",
-    school: false,
-    languages: [Language.cpp],
-    description: `A C++ library that provides support for high precision arithmetic operations on large integers. This library is designed to act as a standard numeric type in C++, allowing for precise calculations with integers of any size, and it offers flexibility in setting the precision of the integers at compile time.`,
-    component: Project6Component,
-    tags: [],
-    created: new Date("2019-12-01"),
-    modified: new Date("2019-12-31"),
-    gitLink: "https://github.com/AaronTheNerd/BigInteger",
-    thumbnails: [],
-  },
-  {
     id: 7,
     title: "IMDb Webscraper",
     school: false,
@@ -168,18 +149,6 @@ export const PROJECTS: IProject[] = [
     favorite: true,
   },
   {
-    id: 11,
-    title: "Simple HTTP Client",
-    school: true,
-    languages: [Language.java],
-    description: `A simple HTTP client program developed as an assignment for a computer networking course. The primary goal of this program is to send GET requests to standard web servers, retrieve HTTP responses, and handle one-hop HTTP redirects, while also allowing users to observe the HTTP requests and responses using Wireshark and save the response HTTP for further analysis.`,
-    component: Project11Component,
-    tags: ["Wireshark", "HTTP"],
-    created: new Date("2020-04-01"),
-    modified: new Date("2020-04-08"),
-    thumbnails: ["assets/thumbnails/network-p1-output.png"],
-  },
-  {
     id: 12,
     title: "Roomba Interface",
     school: true,
@@ -227,45 +196,6 @@ export const PROJECTS: IProject[] = [
     favorite: true,
   },
   {
-    id: 15,
-    title: "Coin-Row and Robot-Coin Solution",
-    school: true,
-    languages: [Language.cpp],
-    description: `A C++ program developed as an assignment for a Data Structures and Algorithms course. This program implements dynamic programming techniques to solve two classic problems: the Coin-Row problem and the Robot-Coin problem.`,
-    component: Project15Component,
-    tags: [],
-    created: new Date("2019-04-01"),
-    modified: new Date("2019-04-08"),
-    gitLink:
-      "https://github.com/csce350-spring19/program-5-AaronTheNerd/tree/master/src",
-    thumbnails: [],
-  },
-  {
-    id: 16,
-    title: "Simulated SPI Transactions",
-    school: true,
-    languages: [Language.cpp],
-    description: `A C++ program that was developed as an assignment for a Computer Systems course. The goal of the project was to implement a simulation of an SPI transfer between two simulated devices using bit-banging techniques. The program emulates the SPI communication protocol, allowing for data exchange between the simulated devices.`,
-    component: Project16Component,
-    tags: ["SPI Data Transfer", "Bit Manipulation"],
-    created: new Date("2020-04-01"),
-    modified: new Date("2020-04-08"),
-    gitLink: "https://github.com/AaronTheNerd/virtual_spi",
-    thumbnails: [],
-  },
-  {
-    id: 17,
-    title: "Custom Syscall",
-    school: true,
-    languages: [Language.c],
-    description: `A C program that was developed as part of an assignment for an Operating Systems course. This program involves adding a custom system call to the Linux kernel, requiring the recompilation of the kernel. The custom syscall allows users to walk through the memory of a program and determine the permissions of a specific block of memory.`,
-    component: Project17Component,
-    tags: ["Linux Kernel", "Virtual Memory"],
-    created: new Date("2019-11-01"),
-    modified: new Date("2019-11-08"),
-    thumbnails: [],
-  },
-  {
     id: 18,
     title: "Runtime Optimization of MergeSort via Multithreading",
     school: true,
@@ -278,18 +208,6 @@ export const PROJECTS: IProject[] = [
     gitLink:
       "https://github.com/AaronTheNerd/Personal-Coding-Projects/tree/master/C++/MergeSort",
     thumbnails: ["assets/thumbnails/chart.png"],
-  },
-  {
-    id: 19,
-    title: "All Possible Words from Grid",
-    school: true,
-    languages: [Language.java],
-    description: `A Java program that was developed as an extra-credit assignment for a Computer Science course. The aim of the project was to create a program that can loop through a grid of characters and find all valid words by connecting the characters in different directions.`,
-    component: Project19Component,
-    tags: [],
-    created: new Date("2018-04-01"),
-    modified: new Date("2018-04-08"),
-    thumbnails: [],
   },
   {
     id: 20,
