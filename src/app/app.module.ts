@@ -35,19 +35,13 @@ import { Project2Component } from "./project-detail/projects/project2/project2.c
 import { Project3Component } from "./project-detail/projects/project3/project3.component";
 import { Project4Component } from "./project-detail/projects/project4/project4.component";
 import { Project5Component } from "./project-detail/projects/project5/project5.component";
-import { Project6Component } from "./project-detail/projects/project6/project6.component";
 import { Project7Component } from "./project-detail/projects/project7/project7.component";
 import { Project9Component } from "./project-detail/projects/project9/project9.component";
 import { Project10Component } from "./project-detail/projects/project10/project10.component";
-import { Project11Component } from "./project-detail/projects/project11/project11.component";
 import { Project12Component } from "./project-detail/projects/project12/project12.component";
 import { Project13Component } from "./project-detail/projects/project13/project13.component";
 import { Project14Component } from "./project-detail/projects/project14/project14.component";
-import { Project15Component } from "./project-detail/projects/project15/project15.component";
-import { Project16Component } from "./project-detail/projects/project16/project16.component";
-import { Project17Component } from "./project-detail/projects/project17/project17.component";
 import { Project18Component } from "./project-detail/projects/project18/project18.component";
-import { Project19Component } from "./project-detail/projects/project19/project19.component";
 import { SubsubsectionHeadingComponent } from "./project-detail/subsubsection-heading/subsubsection-heading.component";
 import { CommandListComponent } from "./project-detail/command-list/command-list.component";
 import { GithubCardComponent } from "./project-detail/github-card/github-card.component";
@@ -79,19 +73,13 @@ import { Project20Component } from "./project-detail/projects/project20/project2
     Project3Component,
     Project4Component,
     Project5Component,
-    Project6Component,
     Project7Component,
     Project9Component,
     Project10Component,
-    Project11Component,
     Project12Component,
     Project13Component,
     Project14Component,
-    Project15Component,
-    Project16Component,
-    Project17Component,
     Project18Component,
-    Project19Component,
     SubsubsectionHeadingComponent,
     CommandListComponent,
     GithubCardComponent,
